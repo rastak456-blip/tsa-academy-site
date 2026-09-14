@@ -1,0 +1,86 @@
+<header class="site-header{{HEADER_MODIFIER}}">
+  <div class="site-header__utility">
+    <div class="site-header__inner">
+      <nav class="utility-menu" aria-label="Utility navigation">
+        <a class="utility-menu__link" href="{{STUDENT_HREF}}">Student</a>
+        <div class="language-menu">
+          <button class="language-menu__button" type="button" aria-expanded="false" aria-controls="language-list">
+            <span class="language-menu__text">English</span>
+            <span class="language-menu__icon" aria-hidden="true">⌄</span>
+          </button>
+          <ul class="language-menu__list" id="language-list" hidden>
+            <li class="language-menu__item"><button class="language-menu__option" type="button" data-language="en" lang="en">English</button></li>
+            <li class="language-menu__item"><button class="language-menu__option" type="button" data-language="ko" lang="ko">한국어</button></li>
+          </ul>
+        </div>
+        <a class="utility-menu__link utility-menu__link--agency" href="http://lms.tsacebu.com/login.php" target="_blank" rel="noopener noreferrer">Agency</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="site-header__main">
+    <div class="site-header__inner site-header__inner--main">
+      <a class="brand" href="{{HOME_HREF}}" aria-label="TSA Talkstation Academy home">
+        <img class="brand__image" src="{{ROOT_PREFIX}}assets/tsa-logo.png" alt="TSA Talkstation Academy">
+      </a>
+      <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="site-header__toggle-text">Menu</span>
+      </button>
+      <nav class="main-menu" id="primary-menu" aria-label="Primary navigation">
+        <div class="main-menu__group" data-menu-group="about">
+          <button class="main-menu__button" type="button" aria-expanded="false"><span class="main-menu__text">About TSA</span><span class="main-menu__icon" aria-hidden="true">⌄</span></button>
+          <div class="main-menu__submenu">
+            <a class="main-menu__sublink" data-menu-page="about-philosophy.html" href="{{PAGE_PREFIX}}about-philosophy.html">Educational Philosophy</a>
+            <a class="main-menu__sublink" data-menu-page="about-difference.html" href="{{PAGE_PREFIX}}about-difference.html">The TSA Difference</a>
+            <a class="main-menu__sublink" data-menu-page="about-teachers.html" href="{{PAGE_PREFIX}}about-teachers.html">Our Teachers</a>
+            <a class="main-menu__sublink" data-menu-page="about-care.html" href="{{PAGE_PREFIX}}about-care.html">Student Care &amp; Safety</a>
+            <a class="main-menu__sublink" data-menu-page="about-schedule.html" href="{{PAGE_PREFIX}}about-schedule.html">Daily Schedule</a>
+          </div>
+        </div>
+
+        <div class="main-menu__group" data-menu-group="gallery">
+          <button class="main-menu__button" type="button" aria-expanded="false"><span class="main-menu__text">Gallery</span><span class="main-menu__icon" aria-hidden="true">⌄</span></button>
+          <div class="main-menu__submenu">
+            <a class="main-menu__sublink" data-menu-page="gallery-campus.html" href="{{PAGE_PREFIX}}gallery-campus.html">Campus</a>
+            <a class="main-menu__sublink" data-menu-page="gallery-stay.html" href="{{PAGE_PREFIX}}gallery-stay.html">Accommodation</a>
+            <a class="main-menu__sublink" data-menu-page="gallery-activities.html" href="{{PAGE_PREFIX}}gallery-activities.html">Activities</a>
+          </div>
+        </div>
+
+        <div class="main-menu__group" data-menu-group="curriculum">
+          <button class="main-menu__button" type="button" aria-expanded="false"><span class="main-menu__text">Curriculum</span><span class="main-menu__icon" aria-hidden="true">⌄</span></button>
+          <div class="main-menu__submenu main-menu__submenu--curriculum">
+            <a class="main-menu__sublink" data-menu-page="curriculum-overview.html" href="{{PAGE_PREFIX}}curriculum-overview.html">All Courses</a>
+            <div class="main-menu__subgroup">
+              <a class="main-menu__sublink main-menu__sublink--parent" data-menu-page="curriculum-esl.html" href="{{PAGE_PREFIX}}curriculum-esl.html"><span class="main-menu__subtext">ESL Courses</span><span class="main-menu__subicon" aria-hidden="true">›</span></a>
+              <div class="main-menu__subsubmenu">
+                <a class="main-menu__sublink" data-menu-page="curriculum-esl-regular.html" href="{{PAGE_PREFIX}}curriculum-esl-regular.html">Regular ESL</a>
+                <a class="main-menu__sublink" data-menu-page="curriculum-esl-regular-plus.html" href="{{PAGE_PREFIX}}curriculum-esl-regular-plus.html">Regular+ ESL</a>
+                <a class="main-menu__sublink" data-menu-page="curriculum-esl-intensive.html" href="{{PAGE_PREFIX}}curriculum-esl-intensive.html">Intensive Speaking</a>
+                <a class="main-menu__sublink" data-menu-page="curriculum-esl-power.html" href="{{PAGE_PREFIX}}curriculum-esl-power.html">Power Speaking</a>
+              </div>
+            </div>
+            <div class="main-menu__subgroup">
+              <a class="main-menu__sublink main-menu__sublink--parent" data-menu-page="curriculum-ielts.html" href="{{PAGE_PREFIX}}curriculum-ielts.html"><span class="main-menu__subtext">IELTS Courses</span><span class="main-menu__subicon" aria-hidden="true">›</span></a>
+              <div class="main-menu__subsubmenu">
+                <a class="main-menu__sublink" data-menu-page="curriculum-ielts-pre.html" href="{{PAGE_PREFIX}}curriculum-ielts-pre.html">Pre-IELTS</a>
+                <a class="main-menu__sublink" data-menu-page="curriculum-ielts-regular.html" href="{{PAGE_PREFIX}}curriculum-ielts-regular.html">Regular IELTS</a>
+                <a class="main-menu__sublink" data-menu-page="curriculum-ielts-guarantee.html" href="{{PAGE_PREFIX}}curriculum-ielts-guarantee.html">IELTS Guarantee</a>
+              </div>
+            </div>
+            <a class="main-menu__sublink" data-menu-page="curriculum-levels.html" href="{{PAGE_PREFIX}}curriculum-levels.html">Level System</a>
+          </div>
+        </div>
+
+        <div class="main-menu__group" data-menu-group="community">
+          <button class="main-menu__button" type="button" aria-expanded="false"><span class="main-menu__text">Community</span><span class="main-menu__icon" aria-hidden="true">⌄</span></button>
+          <div class="main-menu__submenu">
+            <a class="main-menu__sublink" data-menu-page="community-notice.html" href="{{PAGE_PREFIX}}community-notice.html">Notice</a>
+            <a class="main-menu__sublink" data-menu-page="community-faq.html" href="{{PAGE_PREFIX}}community-faq.html">FAQ</a>
+            <a class="main-menu__sublink" data-menu-page="partnership-inquiry.html" href="{{PAGE_PREFIX}}partnership-inquiry.html">Partnership Inquiry</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,434 @@
+{
+  "about-academy-hero.webp": {
+    "width": 1200,
+    "height": 675,
+    "variants": [
+      {
+        "file": "about-academy-hero-640.webp",
+        "width": 640
+      },
+      {
+        "file": "about-academy-hero-960.webp",
+        "width": 960
+      },
+      {
+        "file": "about-academy-hero.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "campus-learning-lounge.webp": {
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "file": "campus-learning-lounge-640.webp",
+        "width": 640
+      },
+      {
+        "file": "campus-learning-lounge-960.webp",
+        "width": 960
+      },
+      {
+        "file": "campus-learning-lounge.webp",
+        "width": 1086
+      }
+    ]
+  },
+  "conversation-class.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "conversation-class-640.webp",
+        "width": 640
+      },
+      {
+        "file": "conversation-class-960.webp",
+        "width": 960
+      },
+      {
+        "file": "conversation-class.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "education-heritage.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "education-heritage-640.webp",
+        "width": 640
+      },
+      {
+        "file": "education-heritage-960.webp",
+        "width": 960
+      },
+      {
+        "file": "education-heritage.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "esl-editorial-hero.webp": {
+    "width": 1200,
+    "height": 675,
+    "variants": [
+      {
+        "file": "esl-editorial-hero-640.webp",
+        "width": 640
+      },
+      {
+        "file": "esl-editorial-hero-960.webp",
+        "width": 960
+      },
+      {
+        "file": "esl-editorial-hero.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "facility-safety.webp": {
+    "width": 1920,
+    "height": 1280,
+    "variants": [
+      {
+        "file": "facility-safety-640.webp",
+        "width": 640
+      },
+      {
+        "file": "facility-safety-960.webp",
+        "width": 960
+      },
+      {
+        "file": "facility-safety.webp",
+        "width": 1920
+      }
+    ]
+  },
+  "ielts-editorial-hero.webp": {
+    "width": 1200,
+    "height": 675,
+    "variants": [
+      {
+        "file": "ielts-editorial-hero-640.webp",
+        "width": 640
+      },
+      {
+        "file": "ielts-editorial-hero-960.webp",
+        "width": 960
+      },
+      {
+        "file": "ielts-editorial-hero.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "junior-curriculum-hero.webp": {
+    "width": 1200,
+    "height": 675,
+    "variants": [
+      {
+        "file": "junior-curriculum-hero-640.webp",
+        "width": 640
+      },
+      {
+        "file": "junior-curriculum-hero-960.webp",
+        "width": 960
+      },
+      {
+        "file": "junior-curriculum-hero.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "junior-guided-study.webp": {
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "file": "junior-guided-study-640.webp",
+        "width": 640
+      },
+      {
+        "file": "junior-guided-study-960.webp",
+        "width": 960
+      },
+      {
+        "file": "junior-guided-study.webp",
+        "width": 1086
+      }
+    ]
+  },
+  "junior-peer-conversation.webp": {
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "file": "junior-peer-conversation-640.webp",
+        "width": 640
+      },
+      {
+        "file": "junior-peer-conversation-960.webp",
+        "width": 960
+      },
+      {
+        "file": "junior-peer-conversation.webp",
+        "width": 1086
+      }
+    ]
+  },
+  "junior-speaking-practice.webp": {
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "file": "junior-speaking-practice-640.webp",
+        "width": 640
+      },
+      {
+        "file": "junior-speaking-practice-960.webp",
+        "width": 960
+      },
+      {
+        "file": "junior-speaking-practice.webp",
+        "width": 1086
+      }
+    ]
+  },
+  "level-assessment.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "level-assessment-640.webp",
+        "width": 640
+      },
+      {
+        "file": "level-assessment-960.webp",
+        "width": 960
+      },
+      {
+        "file": "level-assessment.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "outdoor-conversation.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "outdoor-conversation-640.webp",
+        "width": 640
+      },
+      {
+        "file": "outdoor-conversation-960.webp",
+        "width": 960
+      },
+      {
+        "file": "outdoor-conversation.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "personalized-class.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "personalized-class-640.webp",
+        "width": 640
+      },
+      {
+        "file": "personalized-class-960.webp",
+        "width": 960
+      },
+      {
+        "file": "personalized-class.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "progress-assessment.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "progress-assessment-640.webp",
+        "width": 640
+      },
+      {
+        "file": "progress-assessment-960.webp",
+        "width": 960
+      },
+      {
+        "file": "progress-assessment.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "small-group-classroom.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "small-group-classroom-640.webp",
+        "width": 640
+      },
+      {
+        "file": "small-group-classroom-960.webp",
+        "width": 960
+      },
+      {
+        "file": "small-group-classroom.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "snorkeling-activity.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "snorkeling-activity-640.webp",
+        "width": 640
+      },
+      {
+        "file": "snorkeling-activity-960.webp",
+        "width": 960
+      },
+      {
+        "file": "snorkeling-activity.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "speaking-practice.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "speaking-practice-640.webp",
+        "width": 640
+      },
+      {
+        "file": "speaking-practice-960.webp",
+        "width": 960
+      },
+      {
+        "file": "speaking-practice.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "student-consultation.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "student-consultation-640.webp",
+        "width": 640
+      },
+      {
+        "file": "student-consultation-960.webp",
+        "width": 960
+      },
+      {
+        "file": "student-consultation.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "student-mentoring.webp": {
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "file": "student-mentoring-640.webp",
+        "width": 640
+      },
+      {
+        "file": "student-mentoring-960.webp",
+        "width": 960
+      },
+      {
+        "file": "student-mentoring.webp",
+        "width": 1086
+      }
+    ]
+  },
+  "student-presentation.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "student-presentation-640.webp",
+        "width": 640
+      },
+      {
+        "file": "student-presentation-960.webp",
+        "width": 960
+      },
+      {
+        "file": "student-presentation.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "student-study-lounge.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "student-study-lounge-640.webp",
+        "width": 640
+      },
+      {
+        "file": "student-study-lounge-960.webp",
+        "width": 960
+      },
+      {
+        "file": "student-study-lounge.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "teacher-classroom.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "teacher-classroom-640.webp",
+        "width": 640
+      },
+      {
+        "file": "teacher-classroom-960.webp",
+        "width": 960
+      },
+      {
+        "file": "teacher-classroom.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "teacher-lesson-planning.webp": {
+    "width": 1200,
+    "height": 1200,
+    "variants": [
+      {
+        "file": "teacher-lesson-planning-640.webp",
+        "width": 640
+      },
+      {
+        "file": "teacher-lesson-planning-960.webp",
+        "width": 960
+      },
+      {
+        "file": "teacher-lesson-planning.webp",
+        "width": 1200
+      }
+    ]
+  }
+}

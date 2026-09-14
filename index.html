@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TSA Talkstation Academy, a premium English language school in Cebu IT Park.">
+  <title>TSA · Talkstation Academy Cebu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260914-02">
+  <script src="script.js?v=20260914-02" defer></script>
+</head>
+<body class="page page--home">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+  <div class="site-header__utility">
+    <div class="site-header__inner">
+      <nav class="utility-menu" aria-label="Utility navigation">
+        <a class="utility-menu__link" href="#">Student</a>
+        <div class="language-menu">
+          <button class="language-menu__button" type="button" aria-expanded="false" aria-controls="language-list">
+            <span class="language-menu__text">English</span>
+            <span class="language-menu__icon" aria-hidden="true">⌄</span>
+          </button>
+          <ul class="language-menu__list" id="language-list" hidden>
+            <li class="language-menu__item"><button class="language-menu__option" type="button" data-language="en" lang="en">English</button></li>
+            <li class="language-menu__item"><button class="language-menu__option" type="button" data-language="ko" lang="ko">한국어</button></li>
+          </ul>
+        </div>
+        <a class="utility-menu__link utility-menu__link--agency" href="http://lms.tsacebu.com/login.php" target="_blank" rel="noopener noreferrer">Agency</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="site-header__main">
+    <div class="site-header__inner site-header__inner--main">
+      <a class="brand" href="#top" aria-label="TSA Talkstation Academy home">
+        <img class="brand__image" src="assets/tsa-logo.png" alt="TSA Talkstation Academy" loading="eager" decoding="async" width="450" height="457">
+      </a>
+      <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="site-header__toggle-text">Menu</span>
+      </button>
+      <nav class="main-menu" id="primary-menu" aria-label="Primary navigation">
+        <div class="main-menu__group" data-menu-group="about">
+          <button class="main-menu__button" type="button" aria-expanded="false"><span class="main-menu__text">About TSA</span><span class="main-menu__icon" aria-hidden="true">⌄</span></button>
+          <div class="main-menu__submenu">
+            <a class="main-menu__sublink" data-menu-page="about-philosophy.html" href="pages/about-philosophy.html">Educational Philosophy</a>
+            <a class="main-menu__sublink" data-menu-page="about-difference.html" href="pages/about-difference.html">The TSA Difference</a>
+            <a class="main-menu__sublink" data-menu-page="about-teachers.html" href="pages/about-teachers.html">Our Teachers</a>
+            <a class="main-menu__sublink" data-menu-page="about-care.html" href="pages/about-care.html">Student Care &amp; Safety</a>
+            <a class="main-menu__sublink" data-menu-page="about-schedule.html" href="pages/about-schedule.html">Daily Schedule</a>
+          </div>
+        </div>
+
+        <div class="main-menu__group" data-menu-group="gallery">
+          <button class="main-menu__button" type="button" aria-expanded="false"><span class="main-menu__text">Gallery</span><span class="main-menu__icon" aria-hidden="true">⌄</span></button>
+          <div class="main-menu__submenu">
+            <a class="main-menu__sublink" data-menu-page="gallery-campus.html" href="pages/gallery-campus.html">Campus</a>
+            <a class="main-menu__sublink" data-menu-page="gallery-stay.html" href="pages/gallery-stay.html">Accommodation</a>
+            <a class="main-menu__sublink" data-menu-page="gallery-activities.html" href="pages/gallery-activities.html">Activities</a>
+          </div>
+        </div>
+
+        <div class="main-menu__group" data-menu-group="curriculum">
+          <button class="main-menu__button" type="button" aria-expanded="false"><span class="main-menu__text">Curriculum</span><span class="main-menu__icon" aria-hidden="true">⌄</span></button>
+          <div class="main-menu__submenu main-menu__submenu--curriculum">
+            <a class="main-menu__sublink" data-menu-page="curriculum-overview.html" href="pages/curriculum-overview.html">All Courses</a>
+            <div class="main-menu__subgroup">
+              <a class="main-menu__sublink main-menu__sublink--parent" data-menu-page="curriculum-esl.html" href="pages/curriculum-esl.html"><span class="main-menu__subtext">ESL Courses</span><span class="main-menu__subicon" aria-hidden="true">›</span></a>
+              <div class="main-menu__subsubmenu">
+                <a class="main-menu__sublink" data-menu-page="curriculum-esl-regular.html" href="pages/curriculum-esl-regular.html">Regular ESL</a>
+                <a class="main-menu__sublink" data-menu-page="curriculum-esl-regular-plus.html" href="pages/curriculum-esl-regular-plus.html">Regular+ ESL</a>
+                <a class="main-menu__sublink" data-menu-page="curriculum-esl-intensive.html" href="pages/curriculum-esl-intensive.html">Intensive Speaking</a>
+                <a class="main-menu__sublink" data-menu-page="curriculum-esl-power.html" href="pages/curriculum-esl-power.html">Power Speaking</a>
+              </div>
+            </div>
+            <div class="main-menu__subgroup">
+              <a class="main-menu__sublink main-menu__sublink--parent" data-menu-page="curriculum-ielts.html" href="pages/curriculum-ielts.html"><span class="main-menu__subtext">IELTS Courses</span><span class="main-menu__subicon" aria-hidden="true">›</span></a>
+              <div class="main-menu__subsubmenu">
+                <a class="main-menu__sublink" data-menu-page="curriculum-ielts-pre.html" href="pages/curriculum-ielts-pre.html">Pre-IELTS</a>
+                <a class="main-menu__sublink" data-menu-page="curriculum-ielts-regular.html" href="pages/curriculum-ielts-regular.html">Regular IELTS</a>
+                <a class="main-menu__sublink" data-menu-page="curriculum-ielts-guarantee.html" href="pages/curriculum-ielts-guarantee.html">IELTS Guarantee</a>
+              </div>
+            </div>
+            <a class="main-menu__sublink" data-menu-page="curriculum-levels.html" href="pages/curriculum-levels.html">Level System</a>
+          </div>
+        </div>
+
+        <div class="main-menu__group" data-menu-group="community">
+          <button class="main-menu__button" type="button" aria-expanded="false"><span class="main-menu__text">Community</span><span class="main-menu__icon" aria-hidden="true">⌄</span></button>
+          <div class="main-menu__submenu">
+            <a class="main-menu__sublink" data-menu-page="community-notice.html" href="pages/community-notice.html">Notice</a>
+            <a class="main-menu__sublink" data-menu-page="community-faq.html" href="pages/community-faq.html">FAQ</a>
+            <a class="main-menu__sublink" data-menu-page="partnership-inquiry.html" href="pages/partnership-inquiry.html">Partnership Inquiry</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  <main id="main-content">
+    <section class="section section--hero" id="top">
+      <div class="hero-slider" aria-hidden="true">
+        <span class="hero-slider__slide hero-slider__slide--lobby hero-slider__slide--active"></span>
+        <span class="hero-slider__slide hero-slider__slide--reception"></span>
+        <span class="hero-slider__slide hero-slider__slide--campus"></span>
+      </div>
+      <div class="section__inner">
+        <header class="section__header section__header--hero">
+          <h1 class="section__title section__title--hero"><span class="section__title-label">Korea's No. 1 Online English Brand — 20 Years</span><span class="section__title-text">TSA, Cebu Language School by Talkstation</span></h1>
+          <p class="section__desc section__desc--hero">When students are happy, agents succeed together.<br>TSA is looking for <strong class="text-accent">agency partners to grow together.</strong></p>
+        </header>
+        <div class="section__body section__body--hero"></div>
+      </div>
+    </section>
+
+    <section class="section section--location" id="campus"><div class="section__inner"><header class="section__header"><p class="section__eyebrow">LOCATION</p><h2 class="section__title">The Cebu Education District Students Prefer Most<br>Cebu IT Park</h2><p class="section__desc">TSA is located in the heart of Cebu IT Park, the city's premier mixed-use district. Cafés, restaurants, marts, hospitals, and malls are all within walking distance, offering a safe and convenient learning environment.</p></header><div class="section__body"><div class="media-grid media-grid--location"><figure class="media-card media-card--wide"><img class="media-card__image" src="https://tsacebu.com/campaign/images/cebu-it-park-view.jpg" alt="Cebu IT Park skyline" loading="lazy" decoding="async" width="1500" height="1000"><figcaption class="media-card__caption">CEBU IT PARK</figcaption></figure><figure class="media-card"><img class="media-card__image" src="https://tsacebu.com/campaign/images/it-park-cafe.jpg" alt="Cafe in Cebu IT Park" loading="lazy" decoding="async" width="800" height="800"><figcaption class="media-card__caption">IT PARK CAFE</figcaption></figure><figure class="media-card"><img class="media-card__image" src="https://tsacebu.com/campaign/images/ayala-malls-central-bloc.jpg" alt="Ayala Malls Central Bloc" loading="lazy" decoding="async" width="1024" height="768"><figcaption class="media-card__caption">AYALA CENTRAL BLOC</figcaption></figure></div><div class="location-layout"><div class="location-info"><article class="info"><p class="info__label">ZONE</p><h3 class="info__title">Cebu IT Park</h3><p class="info__desc">Apas, Cebu City</p></article><article class="info"><p class="info__label">WALKABILITY</p><h3 class="info__title">5-min walk to cafes, dining, marts</h3><p class="info__desc">Cafes, restaurants, and marts all within a 5-minute walk</p></article><article class="info"><p class="info__label">MEDICAL</p><h3 class="info__title">General hospital, ~10 min by car</h3><p class="info__desc">Chong Hua Hospital Mandaue and others, about 10–15 min by car</p></article><article class="info"><p class="info__label">MALL</p><h3 class="info__title">Ayala Central Bloc</h3><p class="info__desc">Shopping &amp; dining within walking distance</p></article></div><div class="location-map"><iframe class="location-map__frame" src="https://maps.google.com/maps?q=Cebu+IT+Park,+Apas,+Cebu+City,+Philippines&amp;z=16&amp;output=embed" loading="lazy" allowfullscreen title="Cebu IT Park Map"></iframe></div></div></div></div></section>
+
+    <section class="section section--campus"><div class="section__inner"><header class="section__header"><p class="section__eyebrow">BRAND STORY</p><h2 class="section__title">Designed Around the Student —<br>The Premium TSA Campus</h2><p class="section__desc">TSA Cebu Campus is a premium English education institution that puts student growth and satisfaction first.<br><br>From private 1:1 classrooms to spacious lounges, stylish common areas, and a dedicated student café, every facility is designed for students to live comfortably and use English naturally. TSA offers more than a language school — it's a campus where study, connection, and rest come together.</p></header><div class="section__body"><div class="media-grid media-grid--campus"><figure class="media-card media-card--featured"><img class="media-card__image" src="https://tsacebu.com/campaign/images/hero-slide-02.jpg" alt="Talkstation Academy reception" loading="lazy" decoding="async" width="1402" height="1122"><figcaption class="media-card__caption">TSA CEBU CAMPUS</figcaption></figure><figure class="media-card"><img class="media-card__image" src="https://tsacebu.com/campaign/images/tsa-lounge-public-space.jpg" alt="TSA lounge and common area" loading="lazy" decoding="async" width="1448" height="1086"><figcaption class="media-card__caption">LOUNGE &amp; COMMON AREA</figcaption></figure><figure class="media-card"><img class="media-card__image" src="https://tsacebu.com/campaign/images/tsa-student-lounge-cafe.jpg" alt="TSA student lounge cafe" loading="lazy" decoding="async" width="1448" height="1086"><figcaption class="media-card__caption">STUDENT CAFÉ</figcaption></figure></div></div></div></section>
+
+    <section class="section section--classrooms">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__eyebrow">CLASSROOMS</p>
+          <h2 class="section__title">100%<br>Private 1:1 Classrooms</h2>
+          <p class="section__desc">Every 1:1 class takes place in its own private classroom. With no surrounding noise or distraction, students enjoy a focused environment that boosts concentration and speaking time.</p>
+        </header>
+        <div class="section__body">
+          <div class="classroom-gallery">
+            <figure class="classroom-gallery__item">
+              <img class="classroom-gallery__image classroom-gallery__image--private" src="https://tsacebu.com/campaign/images/tsa-1-on-1-classroom.jpg" alt="TSA private one-to-one classroom" loading="lazy" decoding="async" width="1086" height="1448">
+              <figcaption class="classroom-gallery__caption">1:1 Private Classroom</figcaption>
+            </figure>
+            <figure class="classroom-gallery__item">
+              <img class="classroom-gallery__image" src="https://tsacebu.com/campaign/images/tsa-1-on-1-classroom-corridor.jpg" alt="TSA one-to-one classroom corridor" loading="lazy" decoding="async" width="1449" height="1085">
+              <figcaption class="classroom-gallery__caption">1:1 Classroom Corridor</figcaption>
+            </figure>
+            <figure class="classroom-gallery__item">
+              <img class="classroom-gallery__image classroom-gallery__image--study-room" src="https://tsacebu.com/campaign/images/talkstation-academy-studyroom-corridor.jpg" alt="Talkstation Academy study room corridor" loading="lazy" decoding="async" width="1411" height="1115">
+              <figcaption class="classroom-gallery__caption">Study Room Corridor</figcaption>
+            </figure>
+            <figure class="classroom-gallery__item">
+              <img class="classroom-gallery__image" src="https://tsacebu.com/campaign/images/tsa-1-on-1-tutoring-class.jpg" alt="One-to-one tutoring at TSA" loading="lazy" decoding="async" width="1085" height="1449">
+              <figcaption class="classroom-gallery__caption">1:1 Tutoring in Session</figcaption>
+            </figure>
+            <figure class="classroom-gallery__item">
+              <img class="classroom-gallery__image" src="https://tsacebu.com/campaign/images/tsa-group-discussion-room.jpg" alt="TSA group discussion room" loading="lazy" decoding="async" width="1086" height="1448">
+              <figcaption class="classroom-gallery__caption">Group Discussion Room</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--stay" id="stay"><div class="section__inner"><header class="section__header"><p class="section__eyebrow">PREMIUM CONDO</p><h2 class="section__title">Premium Condo Dormitory,<br>IT Park Avida Riala Tower</h2><p class="section__desc">A 5-minute walk from campus, TSA uses the premium Cebu IT Park condo Avida Riala Tower as student housing. Enjoy the condo's own community amenities, including an infinity pool and indoor/outdoor sports facilities.</p></header><div class="section__body"><div class="stay-list"><article class="card card--stay"><img class="card__image" src="https://tsacebu.com/campaign/images/avida-riala-tower-infinity-pool.jpg" alt="Avida Riala Tower infinity pool" loading="lazy" decoding="async" width="1024" height="768"><div class="card__body"><h3 class="card__title">Avida Riala Tower · IT Park</h3><p class="card__desc">From campus, <strong class="text-highlight">a 5-minute walk</strong> away<br><strong class="text-highlight">Infinity pool</strong> included<br>Indoor/outdoor <strong class="text-highlight">sports facilities</strong></p></div></article><article class="card card--stay"><img class="card__image" src="https://tsacebu.com/campaign/images/tsa-dormitory-aerial-view-pool.jpg" alt="TSA hotel-style dormitory and pool" loading="lazy" decoding="async" width="1600" height="740"><div class="card__body"><h3 class="card__title">A Place Built for Rest, Too —<br>A 4-Star Hotel-Style Dormitory</h3><p class="card__desc">Just 10 minutes by car from campus, this premium dormitory offers hotel-level comfort and resort-style ease. With amenities like a pool and badminton court, plus a safe living environment, it's the ideal space for students to focus purely on their studies.</p></div></article></div><div class="media-grid media-grid--rooms"><figure class="media-card"><img class="media-card__image" src="https://tsacebu.com/campaign/images/avida-riala-tower-condo-room-kitchen.jpg" alt="Avida Riala Tower condo room with kitchen" loading="lazy" decoding="async" width="1500" height="1000"><figcaption class="media-card__caption">YOUR OWN SPACE, KITCHEN INCLUDED — PRIVATE CONDO ROOMS</figcaption></figure><figure class="media-card"><img class="media-card__image" src="https://tsacebu.com/campaign/images/tsa-dormitory-room-01.jpg" alt="TSA hotel-style dormitory room" loading="lazy" decoding="async" width="1448" height="1086"><figcaption class="media-card__caption">ELEGANT, HOTEL-STYLE ROOMS</figcaption></figure></div></div></div></section>
+
+    <section class="section section--reasons"><div class="section__inner"><header class="section__header"><p class="section__eyebrow">WHY TSA</p><h2 class="section__title">Why Agencies<br>Choose TSA</h2></header><div class="section__body"><div class="feature-list"><article class="card card--feature"><span class="card__number">PRIME LOCATION</span><h3 class="card__title">Cebu IT Park, Students' Top Choice</h3><p class="card__desc">Shopping, cafes, hospitals, and amenities are all within walking distance — one of the safest, best-served districts in Cebu.</p></article><article class="card card--feature"><span class="card__number">PERSONALIZED CARE</span><h3 class="card__title">1:1 Student Manager</h3><p class="card__desc">A dedicated manager systematically oversees each student's study and daily life, resolving issues before they arise.</p></article><article class="card card--feature"><span class="card__number">QUALITY EDUCATION</span><h3 class="card__title">Curriculum Built by Korea's #1 Online English Provider</h3><p class="card__desc">Backed by 20 years of accumulated teaching know-how, an accurate leveling system and lessons tailored to each student's level.</p></article><article class="card card--feature"><span class="card__number">ACCOMMODATIONS</span><h3 class="card__title">Comfortable, Newly Built Dormitory</h3><p class="card__desc">A modern dormitory within walking distance — a living environment where study and rest flow naturally together.</p></article><article class="card card--feature"><span class="card__number">NUTRITIOUS MEALS</span><h3 class="card__title">Carefully Prepared Daily Meals</h3><p class="card__desc">Nutritionally balanced meals help students stay energized even on longer programs. (Meal frequency to be finalized.)</p></article><article class="card card--feature"><span class="card__number">GLOBAL COMMUNITY</span><h3 class="card__title">Multinational Community</h3><p class="card__desc">A classroom shared by students from 10+ countries. English becomes daily life, not just a subject.</p></article></div></div></div></section>
+
+    <section class="section section--programs" id="programs">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__eyebrow">ACADEMIC PROGRAMS</p>
+          <h2 class="section__title">TSA Offers Programs<br>Tailored to Your Goals.</h2>
+          <p class="section__desc">TSA welcomes students of every nationality and goal, offering the most effective learning experience — from everyday conversation to exam prep and business English.</p>
+        </header>
+        <div class="section__body">
+          <figure class="program-showcase">
+            <img class="program-showcase__image" src="https://tsacebu.com/campaign/images/tsa-class-whiteboard.jpg" alt="A real TSA class in session, whiteboard lecture" loading="lazy" decoding="async" width="1529" height="1028">
+          </figure>
+          <div class="program-list program-list--overview">
+            <article class="card card--program">
+              <span class="program-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4.5h11a2 2 0 0 1 2 2V20H7a2 2 0 0 1-2-2Z"></path><path d="M5 4.5v13.8a1.7 1.7 0 0 0 1.7 1.7H18"></path></svg></span>
+              <span class="program-card__tag">Regular</span>
+              <h3 class="card__title">REGULAR</h3>
+              <p class="program-card__subtitle">Comprehensive English Course</p>
+              <p class="card__desc">Balanced listening, speaking, reading &amp; writing — 4–6 hrs/day</p>
+            </article>
+            <article class="card card--program">
+              <span class="program-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 3 4.5 14h6L11 21l8.5-11h-6Z"></path></svg></span>
+              <span class="program-card__tag">Intensive</span>
+              <h3 class="card__title">INTENSIVE</h3>
+              <p class="program-card__subtitle">Intensive English Course</p>
+              <p class="card__desc">Fast progress in a short time — an intensive 8 hrs/day</p>
+            </article>
+            <article class="card card--program">
+              <span class="program-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M6 11a6 6 0 0 0 12 0"></path><path d="M12 17v4M9 21h6"></path></svg></span>
+              <span class="program-card__tag">Power</span>
+              <h3 class="card__title">POWER SPEAKING</h3>
+              <p class="program-card__subtitle">Speaking-Focused Course</p>
+              <p class="card__desc">4 hrs/day of focused 1:1 speaking — building real conversation confidence</p>
+            </article>
+            <article class="card card--program">
+              <span class="program-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.6"></circle></svg></span>
+              <span class="program-card__tag">IELTS</span>
+              <h3 class="card__title">IELTS</h3>
+              <p class="program-card__subtitle">Exam Prep Course</p>
+              <p class="card__desc">Score-focused, with mock tests twice a week — for study abroad, work, or immigration</p>
+            </article>
+            <article class="card card--program">
+              <span class="program-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="7.5" width="17" height="11" rx="1.6"></rect><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5"></path><path d="M3.5 12.5h17"></path></svg></span>
+              <span class="program-card__tag">TOEIC</span>
+              <h3 class="card__title">TOEIC &amp; BUSINESS</h3>
+              <p class="program-card__subtitle">Business English Course</p>
+              <p class="card__desc">TOEIC score + practical English (email, meetings, presentations), weekly mock exam</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--teachers">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__eyebrow">TEACHER QUALITY</p>
+          <h2 class="section__title">Great Lessons<br>Start with Great Teachers.</h2>
+          <p class="section__desc">A student's English ability is shaped by their teacher. TSA hires only teachers who have proven their skill — not simply people who happen to speak English well. Ongoing evaluation and training after hiring keep every class at a consistently high standard.</p>
+        </header>
+        <div class="section__body">
+          <div class="teacher-layout">
+            <img class="teacher-layout__image" src="https://tsacebu.com/campaign/images/tsa-teachers.jpg" alt="TSA teaching staff" loading="lazy" decoding="async" width="1337" height="1177">
+            <div class="teacher-list">
+              <article class="teacher-point">
+                <span class="teacher-point__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="9.5" r="5.5"></circle><path d="m9.7 9.7 1.6 1.6 3-3.2"></path><path d="m8.3 14.3-1.6 6 5.3-2.6 5.3 2.6-1.6-6"></path></svg></span>
+                <h3 class="teacher-point__title">TESOL Certified</h3>
+                <p class="teacher-point__desc">Only teachers holding an internationally recognized TESOL certification are hired.</p>
+              </article>
+              <article class="teacher-point">
+                <span class="teacher-point__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="1.6"></rect><path d="M4 9.5h16M8 3v3.5M16 3v3.5"></path><path d="m9 14 2 2 4-4.3"></path></svg></span>
+                <h3 class="teacher-point__title">3+ Years of Teaching Experience</h3>
+                <p class="teacher-point__desc">Every teacher brings at least 3 years of solid, hands-on teaching experience.</p>
+              </article>
+              <article class="teacher-point">
+                <span class="teacher-point__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12v2M8 8v8M12 5v14M16 8v8M20 12v2"></path></svg></span>
+                <h3 class="teacher-point__title">Ongoing Evaluation &amp; Training</h3>
+                <p class="teacher-point__desc">Regular evaluation and training after hiring keep lesson quality consistently high.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--care" id="care"><div class="section__inner"><header class="section__header"><p class="section__eyebrow">STUDENT CARE</p><h2 class="section__title">From Study to Daily Life,<br>A Seamless 1:1 Care System</h2></header><div class="section__body"><div class="detail-layout detail-layout--reverse"><img class="detail-layout__image" src="https://tsacebu.com/campaign/images/tsa-manager-student-consultation.jpg" alt="TSA manager in a 1:1 consultation with a student" loading="lazy" decoding="async" width="1086" height="1448"><ul class="detail-list"><li class="detail-list__item"><strong>Dedicated Student Manager</strong><br>Every student is assigned a dedicated manager from enrollment through completion, continuously supporting their study and daily life and resolving even small issues quickly.</li><li class="detail-list__item"><strong>24-Hour On-Site Support</strong><br>Staff are on-site around the clock, carefully supporting students' safety and daily life through nights and weekends.</li><li class="detail-list__item"><strong>Multilingual Support for Partner Countries</strong><br>Students, parents, and agencies are supported directly in the languages of our key partner countries — fast, accurate consultation with no language barrier.</li></ul></div></div></div></section>
+
+    <section class="section section--activities"><div class="section__inner"><header class="section__header"><p class="section__eyebrow">WEEKEND ACTIVITIES</p><h2 class="section__title">Learning Continues<br>Outside the Classroom, Too.</h2><p class="section__desc">Safe weekend programs that combine English, travel, and culture. Sustained immersion — just as important as classroom learning — boosts both student satisfaction and retention.</p></header><div class="section__body"><div class="activity-list"><article class="card card--activity"><img class="card__image" src="https://tsacebu.com/campaign/images/bohol-hopping-tour.jpg" alt="Bohol island hopping tour" loading="lazy" decoding="async" width="940" height="1253"><div class="card__body"><h3 class="card__title">Bohol Island Hopping Tour</h3><p class="card__desc">Cebu's beautiful sea and islands — a special memory twice a month.</p></div></article><article class="card card--activity"><img class="card__image" src="https://tsacebu.com/campaign/images/carmen-safari-tour.jpg" alt="Carmen safari tour" loading="lazy" decoding="async" width="768" height="512"><div class="card__body"><h3 class="card__title">Carmen Safari Tour</h3><p class="card__desc">Wildlife and nature experience — a student and family favorite, once a month.</p></div></article><article class="card card--activity"><img class="card__image" src="https://tsacebu.com/campaign/images/cebu-city-tour.jpg" alt="Cebu city tour" loading="lazy" decoding="async" width="1200" height="1200"><div class="card__body"><h3 class="card__title">Cebu City Tour</h3><p class="card__desc">Explore Cebu's history and landmarks — local culture, twice a month.</p></div></article><article class="card card--activity"><img class="card__image" src="https://tsacebu.com/campaign/images/night-market-tour.jpg" alt="Cebu night market" loading="lazy" decoding="async" width="450" height="300"><div class="card__body"><h3 class="card__title">Night Market Tour</h3><p class="card__desc">Local food and night market culture — a safe weekly evening program.</p></div></article></div><p class="section__note">Every official activity is <strong>accompanied by TSA staff</strong> to ensure safety. ※ Schedules may change depending on season, weather, and number of participants.</p></div></div></section>
+
+    <section class="section section--partnership"><div class="section__inner"><header class="section__header"><p class="section__eyebrow">PARTNER WITH TSA</p><h2 class="section__title">When students are happy, agencies succeed together</h2><p class="section__desc">TSA is looking for agency partners who want to grow with a trusted premium English education brand.</p></header><div class="section__body"></div></div></section>
+  </main>
+  <footer class="site-footer">
+  <div class="site-footer__inner">
+    <a class="brand brand--footer" href="#top" aria-label="TSA Talkstation Academy home">
+      <img class="brand__image" src="assets/tsa-logo.png" alt="TSA Talkstation Academy" loading="eager" decoding="async" width="450" height="457">
+    </a>
+    <div class="site-footer__info">
+      <p class="site-footer__address">Cebu IT Park, Cebu City, Philippines</p>
+      <p class="site-footer__copyright">© TSA Talkstation Academy. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

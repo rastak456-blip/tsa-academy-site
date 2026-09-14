@@ -1,0 +1,8 @@
+{
+  "name": "tsa-academy-site",
+  "private": true,
+  "scripts": {
+    "build": "node tools/build-site.mjs",
+    "preview": "node tools/serve.mjs"
+  }
+}

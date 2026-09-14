@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review the TSA agency partnership process and send a partnership inquiry from one page.">
+  <title>Partnership Inquiry · TSA Talkstation Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=20260914-02">
+  <script src="../script.js?v=20260914-02" defer></script>
+</head>
+<body class="page page--subpage">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  {{SITE_HEADER}}
+
+  <main id="main-content">
+    <section class="section section--subhero">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__eyebrow">Community</p>
+          <h1 class="section__title">Partnership Inquiry</h1>
+          <p class="section__desc">Connect with TSA to discuss agency cooperation, onboarding, and student support.</p>
+        </header>
+        <div class="section__body">
+          <img class="subhero__image" src="https://tsacebu.com/campaign/images/tsa-manager-student-consultation.jpg" alt="TSA manager consulting with students">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--partnership-process">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__eyebrow">PARTNERSHIP PROCESS</p>
+          <h2 class="section__title">A Clear Start for Every Agency Partner</h2>
+          <p class="section__desc">Consultation, agreement, and student support are handled in one connected process.</p>
+        </header>
+        <div class="section__body">
+          <div class="feature-list">
+            <article class="card card--feature">
+              <span class="card__number">01</span>
+              <h3 class="card__title">Partnership Consultation</h3>
+              <p class="card__desc">We review your market, student needs, and preferred cooperation model.</p>
+            </article>
+            <article class="card card--feature">
+              <span class="card__number">02</span>
+              <h3 class="card__title">Agreement &amp; Account Setup</h3>
+              <p class="card__desc">The partnership agreement and agency operating information are prepared together.</p>
+            </article>
+            <article class="card card--feature">
+              <span class="card__number">03</span>
+              <h3 class="card__title">Student Referral &amp; Support</h3>
+              <p class="card__desc">TSA supports each referred student from consultation through enrollment and completion.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--partnership-inquiry">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__eyebrow">PARTNERSHIP INQUIRY</p>
+          <h2 class="section__title">Tell Us About Your Agency</h2>
+          <p class="section__desc">Share the information below so the TSA team can prepare the right partnership discussion.</p>
+        </header>
+
+        <div class="section__body">
+          <div class="inquiry-layout">
+            <form class="inquiry-form" name="agency-partnership" method="POST" action="partnership-thank-you.html" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="agency-partnership">
+              <p class="inquiry-form__honeypot">
+                <label>Do not fill out this field: <input name="bot-field"></label>
+              </p>
+
+              <fieldset class="inquiry-form__group">
+                <legend class="inquiry-form__legend">Agency Information</legend>
+                <div class="inquiry-form__fields">
+                  <div class="inquiry-form__field">
+                    <label class="inquiry-form__label" for="agency-name">Agency Name <span class="inquiry-form__required" aria-hidden="true">*</span></label>
+                    <input class="inquiry-form__control" id="agency-name" name="agency-name" type="text" autocomplete="organization" required aria-required="true">
+                  </div>
+
+                  <div class="inquiry-form__field">
+                    <label class="inquiry-form__label" for="contact-name">Contact Person <span class="inquiry-form__required" aria-hidden="true">*</span></label>
+                    <input class="inquiry-form__control" id="contact-name" name="contact-name" type="text" autocomplete="name" required aria-required="true">
+                  </div>
+
+                  <div class="inquiry-form__field">
+                    <label class="inquiry-form__label" for="business-email">Business Email <span class="inquiry-form__required" aria-hidden="true">*</span></label>
+                    <input class="inquiry-form__control" id="business-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-required="true">
+                  </div>
+
+                  <div class="inquiry-form__field">
+                    <label class="inquiry-form__label" for="country-region">Country / Region <span class="inquiry-form__required" aria-hidden="true">*</span></label>
+                    <input class="inquiry-form__control" id="country-region" name="country-region" type="text" autocomplete="country-name" required aria-required="true">
+                  </div>
+
+                  <div class="inquiry-form__field">
+                    <label class="inquiry-form__label" for="contact-channel">Phone / Messenger</label>
+                    <input class="inquiry-form__control" id="contact-channel" name="contact-channel" type="text" autocomplete="tel">
+                  </div>
+
+                  <div class="inquiry-form__field">
+                    <label class="inquiry-form__label" for="agency-channel">Website / Social Channel</label>
+                    <input class="inquiry-form__control" id="agency-channel" name="agency-channel" type="text" autocomplete="url">
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="inquiry-form__group">
+                <legend class="inquiry-form__legend">Partnership Details</legend>
+                <div class="inquiry-form__fields">
+                  <div class="inquiry-form__field">
+                    <label class="inquiry-form__label" for="student-market">Primary Student Market</label>
+                    <input class="inquiry-form__control" id="student-market" name="student-market" type="text">
+                  </div>
+
+                  <div class="inquiry-form__field">
+                    <label class="inquiry-form__label" for="partnership-interest">Partnership Interest <span class="inquiry-form__required" aria-hidden="true">*</span></label>
+                    <select class="inquiry-form__control" id="partnership-interest" name="partnership-interest" required aria-required="true">
+                      <option value="" selected disabled>Select an option</option>
+                      <option value="student-referrals">Student Referrals</option>
+                      <option value="group-programs">Group Programs</option>
+                      <option value="junior-family-programs">Junior / Family Programs</option>
+                      <option value="long-term-partnership">Long-Term Partnership</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="inquiry-form__field inquiry-form__field--full">
+                    <label class="inquiry-form__label" for="inquiry-message">Your Message <span class="inquiry-form__required" aria-hidden="true">*</span></label>
+                    <textarea class="inquiry-form__control inquiry-form__control--message" id="inquiry-message" name="message" required aria-required="true"></textarea>
+                  </div>
+                </div>
+              </fieldset>
+
+              <label class="inquiry-form__consent" for="privacy-consent">
+                <input class="inquiry-form__checkbox" id="privacy-consent" name="privacy-consent" type="checkbox" value="agreed" required aria-required="true">
+                <span>I agree that TSA may use the submitted information only to respond to this partnership inquiry.</span>
+              </label>
+
+              <div class="inquiry-form__captcha" data-netlify-recaptcha="true"></div>
+              <p class="inquiry-form__note">Required fields are marked with an asterisk. The security check appears on the published site.</p>
+
+              <button class="btn btn--primary inquiry-form__submit" type="submit">
+                <span class="btn__text">Send Partnership Inquiry</span>
+              </button>
+            </form>
+
+            <figure class="inquiry-media">
+              <img class="inquiry-media__image" src="https://tsacebu.com/campaign/images/tsa-manager-student-consultation.jpg" alt="TSA manager discussing study plans with students">
+              <figcaption class="inquiry-media__caption">
+                <strong class="inquiry-media__title">A Dedicated Partnership Team</strong>
+                <span class="inquiry-media__desc">We review every inquiry and respond with the most suitable next step for your market and students.</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {{SITE_FOOTER}}
+</body>
+</html>
