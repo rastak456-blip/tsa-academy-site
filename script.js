@@ -1300,11 +1300,26 @@ mainMenuButtons.forEach((button) => {
   });
 });
 
-languageButton?.addEventListener('click', () => {
-  const isOpen = languageButton.getAttribute('aria-expanded') === 'true';
+function setLanguageMenu(open) {
+  languageButton?.setAttribute('aria-expanded', String(open));
+  if (languageList) languageList.hidden = !open;
+}
 
-  languageButton.setAttribute('aria-expanded', String(!isOpen));
-  languageList.hidden = isOpen;
+languageButton?.addEventListener('click', () => {
+  setLanguageMenu(languageButton.getAttribute('aria-expanded') !== 'true');
+});
+
+// The language list opens on hover like the main menu, and stays clickable for touch.
+const languageMenu = document.querySelector('.language-menu');
+
+languageMenu?.addEventListener('pointerenter', (event) => {
+  if (event.pointerType !== 'mouse' || !wideViewport.matches) return;
+  setLanguageMenu(true);
+});
+
+languageMenu?.addEventListener('pointerleave', (event) => {
+  if (event.pointerType !== 'mouse' || !wideViewport.matches) return;
+  setLanguageMenu(false);
 });
 
 languageOptions.forEach((option) => {
