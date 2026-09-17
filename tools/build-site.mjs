@@ -112,7 +112,6 @@ function getPageContext(relativePath) {
 function renderSiteHeader(context) {
   let header = replaceTokens(siteHeaderTemplate, {
     HEADER_MODIFIER: context.isHome ? '' : ' site-header--subpage',
-    STUDENT_HREF: '#',
     ROOT_PREFIX: context.rootPrefix,
     PAGE_PREFIX: context.pagePrefix,
     HOME_HREF: context.homeHref,

@@ -1,7 +1,6 @@
 const koreanTranslations = new Map([
   ['Skip to content', '본문 바로가기'],
-  ['Student', '학생'],
-  ['Agency', '에이전시'],
+  ['Agency Login', '에이전시 로그인'],
   ['Menu', '메뉴'],
   ['About TSA', '어학원 소개'],
   ['Educational Philosophy', '교육철학'],
