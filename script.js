@@ -1279,8 +1279,15 @@ menuToggle?.addEventListener('click', () => {
   mainMenu?.classList.toggle('main-menu--open', !isOpen);
 });
 
+const hoverPointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+const wideViewport = window.matchMedia('(min-width: 62.0625rem)');
+
 mainMenuButtons.forEach((button) => {
   button.addEventListener('click', () => {
+    // Hover and :focus-within already open the dropdown on a desktop pointer,
+    // where a click would only pin it open until another group is clicked.
+    if (hoverPointer.matches && wideViewport.matches) return;
+
     const group = button.closest('.main-menu__group');
     const isOpen = button.getAttribute('aria-expanded') === 'true';
 
@@ -1316,6 +1323,19 @@ document.addEventListener('click', (event) => {
     languageButton?.setAttribute('aria-expanded', 'false');
     languageList.hidden = true;
   }
+
+  // A group opened by touch has no pointer to leave it, so close it from outside.
+  if (mainMenu && !mainMenu.contains(event.target) && !menuToggle?.contains(event.target)) {
+    closeMainMenuGroups();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return;
+
+  closeMainMenuGroups();
+  languageButton?.setAttribute('aria-expanded', 'false');
+  if (languageList) languageList.hidden = true;
 });
 
 const heroSlides = Array.from(document.querySelectorAll('.hero-slider__slide'));
