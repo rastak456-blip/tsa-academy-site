@@ -1,7 +1,7 @@
 {
   "about-academy-hero.webp": {
-    "width": 1200,
-    "height": 675,
+    "width": 1672,
+    "height": 941,
     "variants": [
       {
         "file": "about-academy-hero-640.webp",
@@ -13,7 +13,7 @@
       },
       {
         "file": "about-academy-hero.webp",
-        "width": 1200
+        "width": 1672
       }
     ]
   },
@@ -36,8 +36,8 @@
     ]
   },
   "conversation-class.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "conversation-class-640.webp",
@@ -49,13 +49,13 @@
       },
       {
         "file": "conversation-class.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
   "education-heritage.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "education-heritage-640.webp",
@@ -67,13 +67,13 @@
       },
       {
         "file": "education-heritage.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
   "esl-editorial-hero.webp": {
-    "width": 1200,
-    "height": 675,
+    "width": 1672,
+    "height": 941,
     "variants": [
       {
         "file": "esl-editorial-hero-640.webp",
@@ -85,7 +85,7 @@
       },
       {
         "file": "esl-editorial-hero.webp",
-        "width": 1200
+        "width": 1672
       }
     ]
   },
@@ -108,8 +108,8 @@
     ]
   },
   "ielts-editorial-hero.webp": {
-    "width": 1200,
-    "height": 675,
+    "width": 1672,
+    "height": 941,
     "variants": [
       {
         "file": "ielts-editorial-hero-640.webp",
@@ -121,13 +121,13 @@
       },
       {
         "file": "ielts-editorial-hero.webp",
-        "width": 1200
+        "width": 1672
       }
     ]
   },
   "junior-curriculum-hero.webp": {
-    "width": 1200,
-    "height": 675,
+    "width": 1672,
+    "height": 941,
     "variants": [
       {
         "file": "junior-curriculum-hero-640.webp",
@@ -139,7 +139,7 @@
       },
       {
         "file": "junior-curriculum-hero.webp",
-        "width": 1200
+        "width": 1672
       }
     ]
   },
@@ -198,8 +198,8 @@
     ]
   },
   "level-assessment.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "level-assessment-640.webp",
@@ -211,13 +211,13 @@
       },
       {
         "file": "level-assessment.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
   "outdoor-conversation.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "outdoor-conversation-640.webp",
@@ -229,13 +229,13 @@
       },
       {
         "file": "outdoor-conversation.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
   "personalized-class.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "personalized-class-640.webp",
@@ -247,13 +247,13 @@
       },
       {
         "file": "personalized-class.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
   "progress-assessment.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "progress-assessment-640.webp",
@@ -265,13 +265,13 @@
       },
       {
         "file": "progress-assessment.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
   "small-group-classroom.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "small-group-classroom-640.webp",
@@ -283,13 +283,13 @@
       },
       {
         "file": "small-group-classroom.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
   "snorkeling-activity.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "snorkeling-activity-640.webp",
@@ -301,13 +301,13 @@
       },
       {
         "file": "snorkeling-activity.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
   "speaking-practice.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "speaking-practice-640.webp",
@@ -319,13 +319,13 @@
       },
       {
         "file": "speaking-practice.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
   "student-consultation.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "student-consultation-640.webp",
@@ -337,7 +337,7 @@
       },
       {
         "file": "student-consultation.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
@@ -360,8 +360,8 @@
     ]
   },
   "student-presentation.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "student-presentation-640.webp",
@@ -373,13 +373,13 @@
       },
       {
         "file": "student-presentation.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
   "student-study-lounge.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "student-study-lounge-640.webp",
@@ -391,13 +391,13 @@
       },
       {
         "file": "student-study-lounge.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
   "teacher-classroom.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "teacher-classroom-640.webp",
@@ -409,13 +409,13 @@
       },
       {
         "file": "teacher-classroom.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   },
   "teacher-lesson-planning.webp": {
-    "width": 1200,
-    "height": 1200,
+    "width": 1254,
+    "height": 1254,
     "variants": [
       {
         "file": "teacher-lesson-planning-640.webp",
@@ -427,7 +427,7 @@
       },
       {
         "file": "teacher-lesson-planning.webp",
-        "width": 1200
+        "width": 1254
       }
     ]
   }

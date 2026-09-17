@@ -71,7 +71,12 @@ function optimizeImageMarkup(content) {
         const prefix = source.slice(0, source.lastIndexOf('/') + 1);
         const srcset = imageInfo.variants.map(({ file, width }) => `${prefix}${file} ${width}w`).join(', ');
         tag = addImageAttribute(tag, 'srcset', srcset);
-        tag = addImageAttribute(tag, 'sizes', isSubhero ? '(max-width: 48rem) calc(100vw - 2rem), 44rem' : '(max-width: 48rem) calc(100vw - 2rem), 32rem');
+        // A gallery feature spans the whole content column, so it needs its own hint.
+        const isFullColumn = originalTag.includes('gallery-feature__image');
+        let sizes = '(max-width: 48rem) calc(100vw - 2rem), 32rem';
+        if (isSubhero) sizes = '(max-width: 48rem) calc(100vw - 2rem), 44rem';
+        if (isFullColumn) sizes = '(max-width: 48rem) calc(100vw - 2rem), min(75rem, calc(100vw - 4rem))';
+        tag = addImageAttribute(tag, 'sizes', sizes);
       }
     } else if (/assets\/tsa-logo\.png(?:[?#].*)?$/.test(source)) {
       tag = addImageAttribute(tag, 'width', '450');

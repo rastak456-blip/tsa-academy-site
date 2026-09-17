@@ -526,7 +526,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .detail-list__item strong { display: inline-block; margin-bottom: var(--space-xs); font-size: 1.2em; }
 .section.section--gallery-hero { display: grid; min-height: var(--size-gallery-hero); color: var(--color-surface); background-position: center; background-size: cover; align-items: end; }
 .section.section--gallery-hero.section--activity-hero { background-image: linear-gradient(90deg,var(--color-overlay),var(--color-overlay-soft)),url("https://tsacebu.com/images/activity/sub_activity_hero.jpg"); }
-.section.section--gallery-hero.section--facility-hero { background-image: linear-gradient(90deg,var(--color-overlay),var(--color-overlay-soft)),url("assets/site/campus-learning-lounge.webp"); }
+.section.section--gallery-hero.section--facility-hero { background-image: linear-gradient(90deg,var(--color-overlay),var(--color-overlay-soft)),image-set(url("assets/site/campus-learning-lounge.avif") type("image/avif"), url("assets/site/campus-learning-lounge.webp") type("image/webp")); }
 .section.section--gallery-hero.section--stay-hero { background-image: linear-gradient(90deg,var(--color-overlay),var(--color-overlay-soft)),var(--image-stay-hero); }
 .section--gallery-hero .section__header { max-width: 48rem; margin-bottom: 0; }
 .section--facility-hero .section__header, .section--stay-hero .section__header { max-width: var(--size-wide-header); }
@@ -545,7 +545,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .activity-gallery__image { width: 100%; border-radius: var(--radius-lg); object-fit: cover; aspect-ratio: var(--aspect-ratio-gallery-card); }
 .facility-map { min-height: var(--size-gallery-map); border-radius: var(--radius-lg); overflow: hidden; background: var(--color-surface-soft); }
 .facility-map__frame { width: 100%; min-height: var(--size-gallery-map); border: 0; }
-.section.section--facility-safety { display: grid; min-height: var(--size-gallery-hero); color: var(--color-surface); background-image: linear-gradient(90deg,var(--color-overlay),var(--color-overlay-soft)),url("assets/site/facility-safety.webp"); background-position: center; background-size: cover; align-items: center; }
+.section.section--facility-safety { display: grid; min-height: var(--size-gallery-hero); color: var(--color-surface); background-image: linear-gradient(90deg,var(--color-overlay),var(--color-overlay-soft)),image-set(url("assets/site/facility-safety.avif") type("image/avif"), url("assets/site/facility-safety.webp") type("image/webp")); background-position: center; background-size: cover; align-items: center; }
 .section--facility-safety .section__header { max-width: 52rem; margin-bottom: 0; }
 .section--facility-safety .section__eyebrow, .section--facility-safety .section__desc { color: var(--color-surface); }
 .facility-group + .facility-group { margin-top: var(--space-section); }
@@ -600,6 +600,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .inquiry-form__consent { display: flex; align-items: flex-start; gap: var(--space-sm); color: var(--color-text-muted); font-size: var(--font-size-sm); cursor: pointer; }
 .inquiry-form__checkbox { width: var(--size-checkbox); height: var(--size-checkbox); margin: var(--space-xs) var(--space-none) var(--space-none); accent-color: var(--color-primary); flex: var(--flex-fixed); }
 .inquiry-form__captcha { min-height: var(--size-captcha-reserve); }
+.inquiry-form__captcha:empty { min-height: 0; }
 .inquiry-form__note { margin: var(--space-negative-lg) var(--space-none) var(--space-none); color: var(--color-text-muted); font-size: var(--font-size-xs); }
 .inquiry-form__submit { width: var(--ratio-full); border: none; cursor: pointer; }
 .inquiry-form__honeypot { position: absolute; width: var(--size-visually-hidden); height: var(--size-visually-hidden); overflow: hidden; clip-path: inset(var(--ratio-half)); white-space: nowrap; }
