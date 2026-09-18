@@ -2,6 +2,7 @@
   --color-primary: #274185;
   --color-primary-dark: #182a5c;
   --color-accent: #86d4ff;
+  --color-accent-strong: #4fbdf7;
   --color-text: #001227;
   --color-text-muted: #5b6f86;
   --color-surface: #ffffff;
@@ -14,6 +15,10 @@
   --color-course-small-group: #5fa3c8;
   --color-course-medium-group: #2f4268;
   --color-course-open: #ebe7dc;
+  --color-program-esl: #274185;
+  --color-program-esl-soft: rgba(39,65,133,0.05);
+  --color-program-ielts: #5c3fa3;
+  --color-program-ielts-soft: rgba(92,63,163,0.06);
   --color-level-beginner: #8cc441;
   --color-level-beginner-strong: #79af28;
   --color-level-low-intermediate: #ffae39;
@@ -239,7 +244,10 @@ img { display: block; max-width: 100%; height: auto; }
 .section--subhero { padding-top: clamp(4rem, 8vw, 7rem); background: var(--color-surface-warm); }
 .section--subhero .section__inner { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: var(--space-2xl); align-items: center; }
 .section--subhero .section__header { margin-bottom: 0; }
-.section--curriculum-hero { background: var(--color-surface-warm); }
+/* The hero stays, but short enough that the course list starts on the first screen. */
+.section--curriculum-hero { padding-block: clamp(2.5rem,5vw,4rem); background: var(--color-surface-warm); }
+.section--curriculum-hero .section__desc { max-width: 38rem; }
+.section--curriculum-hero .subhero__image { height: clamp(15rem,26vw,21rem); }
 .section--curriculum-hero .section__eyebrow { color: var(--color-primary); }
 .section--curriculum-overview-hero { padding-block: var(--space-section) var(--space-2xl); }
 .section--curriculum-overview-hero .section__inner { display: block; }
@@ -274,10 +282,19 @@ img { display: block; max-width: 100%; height: auto; }
 .course-table thead th { color: var(--color-surface); background: var(--color-primary-dark); font-size: var(--font-size-sm); }
 .course-table tbody th[scope="row"] { text-align: left; }
 .course-table__group th { color: var(--color-primary); background: var(--color-surface-soft); text-align: left; font-size: var(--font-size-sm); letter-spacing: 0.04em; }
+.course-table__group--esl th { color: var(--color-surface); background: var(--color-program-esl); }
+.course-table__group--ielts th { color: var(--color-surface); background: var(--color-program-ielts); }
 .curriculum-detail { display: grid; grid-template-columns: repeat(2,1fr); margin-top: var(--space-2xl); gap: var(--space-lg); }
 .curriculum-course { margin-top: var(--space-section); }
 .curriculum-course__header { max-width: 52rem; margin-bottom: var(--space-2xl); }
 .curriculum-course__title { margin: 0; font-size: clamp(2rem,4vw,3.25rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; }
+.curriculum-course__lead { margin: var(--space-md) 0 0; font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); line-height: var(--line-height-compact); }
+/* ESL and IELTS run in one page, so each group carries its own accent and panel. */
+.curriculum-course--esl, .curriculum-course--ielts { padding: var(--space-2xl); border-top: var(--size-border-emphasis) solid var(--color-program-esl); border-radius: var(--radius-lg); background: var(--color-program-esl-soft); }
+.curriculum-course--ielts { border-top-color: var(--color-program-ielts); background: var(--color-program-ielts-soft); }
+.curriculum-course--ielts .curriculum-course__title, .curriculum-course--ielts .card__link { color: var(--color-program-ielts); }
+.curriculum-course--ielts .content-card--linked:hover { border-color: var(--color-program-ielts); }
+.curriculum-course--esl .curriculum-course__title { color: var(--color-program-esl); }
 .curriculum-block { padding: var(--space-xl); border: 0.0625rem solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); }
 .curriculum-block__title { margin: 0 0 var(--space-lg); font-size: var(--font-size-xl); }
 .curriculum-block__list { display: grid; margin: 0; padding: 0; gap: var(--space-md); list-style: none; }
@@ -405,8 +422,11 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .text-highlight { color: var(--color-text-highlight); font-weight: 900; }
 .section__body--hero { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
 
-.btn { display: inline-flex; min-height: 3.5rem; padding-inline: var(--space-lg); border: 0.0625rem solid transparent; border-radius: var(--radius-pill); align-items: center; justify-content: center; gap: var(--space-md); font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); transition: transform var(--transition-base); }
+.btn { display: inline-flex; min-height: 3.5rem; padding-inline: var(--space-lg); border: 0.0625rem solid transparent; border-radius: var(--radius-pill); align-items: center; justify-content: center; gap: var(--space-md); font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); transition: transform var(--transition-base), background var(--transition-base), border-color var(--transition-base); }
 .btn:hover, .btn:focus-visible { transform: translateY(-0.125rem); }
+/* Hover lands on the same sky accent for both button styles. */
+.btn--primary:hover, .btn--primary:focus-visible { background: var(--color-accent-strong); }
+.btn--ghost:hover, .btn--ghost:focus-visible { border-color: var(--color-accent-strong); background: var(--color-icon-surface); }
 .btn--primary { color: var(--color-primary-dark); background: var(--color-accent); }
 .btn--outline { border-color: var(--color-white-outline); color: var(--color-surface); background: var(--color-white-glass); }
 
@@ -470,14 +490,24 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .schedule-note__title { margin: 0; color: var(--color-primary); font-size: var(--font-size-sm); letter-spacing: var(--letter-spacing-wide); }
 .schedule-note__desc { margin: var(--space-sm) 0 0; color: var(--color-text-muted); }
 .content-grid--three { grid-template-columns: repeat(3,1fr); }
+/* Five cards over three columns: a six-column track centres the second row. */
+.content-grid--class-types { grid-template-columns: repeat(6,1fr); }
+.content-grid--class-types > * { grid-column: span 2; }
+.content-grid--class-types > :nth-child(4) { grid-column: 2 / span 2; }
+.content-card--required { border-color: var(--color-course-one-to-one); }
+.content-card__label--required { color: var(--color-warning-text); }
+.content-card__flag { margin: var(--space-md) 0 0; padding: var(--space-sm) var(--space-md); border-left: var(--size-border-emphasis) solid var(--color-course-one-to-one); background: var(--color-warning-surface); color: var(--color-warning-text); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); }
 .content-grid--four { grid-template-columns: repeat(4,1fr); }
 .content-card { padding: var(--space-xl); border: 0.0625rem solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); box-shadow: var(--shadow-card); }
 .content-card__label { display: block; margin-bottom: var(--space-lg); color: var(--color-primary); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
 .content-card__title { margin: 0; font-size: var(--font-size-xl); line-height: var(--line-height-tight); }
+.content-card__lead { margin: var(--space-sm) 0 0; font-weight: var(--font-weight-semibold); line-height: var(--line-height-compact); }
 .content-card__desc { margin: var(--space-md) 0 0; color: var(--color-text-muted); }
 .content-card--linked { display: flex; position: relative; flex-direction: column; transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
 .content-card--linked:hover { border-color: var(--color-primary); box-shadow: var(--shadow-card-hover, var(--shadow-card)); transform: translateY(-0.125rem); }
 .content-card--linked .content-card__desc { flex: 1; }
+/* The link sits at the bottom left of every card, whatever the copy length. */
+.content-card--linked .card__link { align-self: flex-start; margin-top: auto; padding-top: var(--space-lg); }
 .card__link--stretched::after { position: absolute; inset: 0; border-radius: inherit; content: ""; }
 .content-card--linked:focus-within { outline: 3px solid var(--color-accent); outline-offset: 3px; }
 .process-list { display: grid; margin: 0; padding: 0; gap: var(--space-lg); grid-template-columns: repeat(4,1fr); list-style: none; }
@@ -656,7 +686,9 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .finder-card__summary { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-md); list-style: none; cursor: pointer; }
 .finder-card__summary::-webkit-details-marker { display: none; }
 .finder-card__goal { display: block; font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); line-height: var(--line-height-compact); }
-.finder-card__course { display: block; margin-top: var(--space-sm); color: var(--color-primary); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); letter-spacing: 0.06em; }
+.finder-card__course { display: block; margin: 0 0 var(--space-sm); color: var(--color-primary); font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); font-style: normal; }
+/* An odd card count would leave the last one alone in the left column. */
+.finder-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .finder-card__icon { display: inline-block; color: var(--color-primary); font-size: var(--font-size-xl); font-weight: var(--font-weight-bold); line-height: 1; transition: transform var(--transition-base); }
 .finder-card[open] .finder-card__icon { transform: rotate(45deg); }
 .finder-card__body { margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 0.0625rem solid var(--color-border); }
@@ -722,6 +754,8 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .classroom-gallery, .program-list--overview { grid-template-columns: repeat(3,1fr); }
   .facility-group__list--cafeteria { grid-template-columns: repeat(2,1fr); }
   .content-grid--three, .content-grid--four, .process-list { grid-template-columns: repeat(2,1fr); }
+  .content-grid--class-types > *, .content-grid--class-types > :nth-child(4) { grid-column: auto; }
+  .curriculum-course--esl, .curriculum-course--ielts { padding: var(--space-lg); }
   .media-grid--editorial { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .recommendation-list { grid-template-columns: repeat(2,1fr); }
   .course-code { grid-template-columns: 1fr; }
