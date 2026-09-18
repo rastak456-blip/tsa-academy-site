@@ -5,8 +5,15 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const toolDirectory = path.dirname(fileURLToPath(import.meta.url));
-const distributionRoot = path.resolve(toolDirectory, '..', 'dist');
-const port = Number(process.env.PORT || 4173);
+
+// --root lets a second instance serve another checkout, so two builds can run side by side.
+function readOption(name) {
+  const index = process.argv.indexOf(`--${name}`);
+  return index === -1 ? undefined : process.argv[index + 1];
+}
+
+const distributionRoot = path.resolve(readOption('root') ?? path.join(toolDirectory, '..', 'dist'));
+const port = Number(readOption('port') || process.env.PORT || 4173);
 
 const contentTypes = {
   '.html': 'text/html; charset=utf-8',

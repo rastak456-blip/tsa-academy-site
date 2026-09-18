@@ -6,6 +6,12 @@
       "runtimeExecutable": "node",
       "runtimeArgs": ["tools/serve.mjs"],
       "port": 4173
+    },
+    {
+      "name": "tsa-site-baseline",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["tools/serve.mjs", "--root", "../TSA어학원 사이트-baseline/dist", "--port", "4174"],
+      "port": 4174
     }
   ]
 }
