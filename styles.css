@@ -231,6 +231,7 @@ img { display: block; max-width: 100%; height: auto; }
 .section__eyebrow { margin: 0 0 var(--space-md); color: var(--color-primary); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.18em; }
 .section__title { margin: 0; font-size: var(--font-size-heading); font-weight: 800; line-height: 1.03; letter-spacing: -0.01em; }
 .section__desc { margin: var(--space-lg) 0 0; color: var(--color-text-muted); font-size: var(--font-size-lg); }
+.section__lead { margin: var(--space-md) 0 0; font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); line-height: var(--line-height-compact); }
 .section__note { margin: var(--space-xl) 0 0; color: var(--color-text-muted); font-size: var(--font-size-sm); }
 .section--hero { position: relative; display: grid; min-height: 52rem; padding-top: var(--space-hero-header); overflow: hidden; color: var(--color-surface); background: var(--color-primary-dark); isolation: isolate; place-items: center stretch; }
 .section--hero::after { position: absolute; z-index: 1; background: linear-gradient(90deg,var(--color-overlay),var(--color-overlay-soft)); content: ""; inset: 0; pointer-events: none; }
@@ -703,6 +704,15 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .cycle-flow__item--final { color: var(--color-surface); background: var(--color-primary); }
 .cycle-flow__arrow { color: var(--color-text-muted); font-size: var(--font-size-lg); }
 
+/* Activity expansion, not level steps: each stage flows into the next. */
+.activity-flow { display: grid; margin: 0; padding: 0; gap: var(--space-2xl); grid-template-columns: repeat(5,1fr); list-style: none; }
+.activity-flow__step { position: relative; padding: var(--space-lg); border-top: var(--size-border-emphasis) solid var(--color-program-esl); border-radius: var(--space-none) var(--space-none) var(--radius-md) var(--radius-md); background: var(--color-surface-soft); }
+.activity-flow__step + .activity-flow__step::before { position: absolute; top: 50%; left: calc(var(--space-2xl) * -1); width: var(--space-2xl); color: var(--color-program-esl); text-align: center; font-size: var(--font-size-xl); line-height: 1; content: "→"; transform: translateY(-50%); }
+.activity-flow__stage { display: block; color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
+.activity-flow__name { display: block; margin-top: var(--space-sm); font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); line-height: var(--line-height-compact); }
+.activity-flow__desc { display: block; margin-top: var(--space-sm); color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-compact); }
+.course-table__link { color: var(--color-primary); font-weight: var(--font-weight-bold); }
+.course-table__link:hover, .course-table__link:focus-visible { text-decoration: underline; }
 .level-path { display: grid; margin: 0; padding: 0; gap: var(--space-sm); grid-template-columns: repeat(5,1fr); align-items: end; list-style: none; }
 .level-path__item { padding: var(--space-lg); border-radius: var(--radius-md) var(--radius-md) var(--space-none) var(--space-none); color: var(--color-surface); }
 .level-path__item--beginner { min-height: 11rem; background: var(--color-level-beginner-strong); }
@@ -755,6 +765,8 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .facility-group__list--cafeteria { grid-template-columns: repeat(2,1fr); }
   .content-grid--three, .content-grid--four, .process-list { grid-template-columns: repeat(2,1fr); }
   .content-grid--class-types > *, .content-grid--class-types > :nth-child(4) { grid-column: auto; }
+  .activity-flow { grid-template-columns: 1fr; gap: var(--space-xl); }
+  .activity-flow__step + .activity-flow__step::before { top: calc(var(--space-xl) * -1); left: 50%; width: auto; content: "↓"; transform: translateX(-50%); }
   .curriculum-course--esl, .curriculum-course--ielts { padding: var(--space-lg); }
   .media-grid--editorial { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .recommendation-list { grid-template-columns: repeat(2,1fr); }

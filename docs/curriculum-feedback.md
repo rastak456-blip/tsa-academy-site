@@ -67,9 +67,9 @@ git worktree add "../TSA어학원 사이트-baseline" main
 
 ## 2. ESL 과정 메인 페이지 (`pages/curriculum-esl.html`)
 
-- [ ] **상단 제목 강화** [개선] — `ESL 과정`을 대표 제목으로, 설명형 문장은 보조 문구로
-- [ ] **과정 비교 방식 변경** [개선] — `과정 비교` → `ESL 과정 비교`, 카드 4개를 과정명·핵심 키워드·주요 수업 구성 비교표로 교체
-- [ ] **중급 이상 학습 확장 도식 변경** [개선] — 레벨 단계가 아니라 `Basic Communication → Opinion Sharing → Discussion → Argumentation → Debate & Presentation` 흐름 도식
+- [x] **상단 제목 강화** [개선] — `ESL 과정`을 대표 제목으로, 설명형 문장은 보조 문구로
+- [x] **과정 비교 방식 변경** [개선] — `과정 비교` → `ESL 과정 비교`, 카드 4개를 과정명·핵심 키워드·주요 수업 구성 비교표로 교체
+- [x] **중급 이상 학습 확장 도식 변경** [개선] — 레벨 단계가 아니라 `Basic Communication → Opinion Sharing → Discussion → Argumentation → Debate & Presentation` 흐름 도식
 
 ## 3. ESL 과정별 상세 페이지 (`pages/curriculum-esl-*.html` 4종)
 
