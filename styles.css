@@ -780,12 +780,20 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .cycle-flow__arrow { color: var(--color-text-muted); font-size: var(--font-size-lg); }
 
 /* Activity expansion, not level steps: each stage flows into the next. */
-.activity-flow { display: grid; margin: 0; padding: 0; gap: var(--space-2xl); grid-template-columns: repeat(5,1fr); list-style: none; }
-.activity-flow__step { position: relative; padding: var(--space-lg); border-top: var(--size-border-emphasis) solid var(--color-program-esl); border-radius: var(--space-none) var(--space-none) var(--radius-md) var(--radius-md); background: var(--color-surface-soft); }
-.activity-flow__step + .activity-flow__step::before { position: absolute; top: 50%; left: calc(var(--space-2xl) * -1); width: var(--space-2xl); color: var(--color-program-esl); text-align: center; font-size: var(--font-size-xl); line-height: 1; content: "→"; transform: translateY(-50%); }
+.activity-flow { display: grid; margin: 0; padding: 0; gap: var(--space-xl); grid-template-columns: repeat(5,1fr); list-style: none; }
+.activity-flow__step { display: flex; position: relative; padding: var(--space-lg); border-top: var(--size-border-emphasis) solid var(--color-program-esl); border-radius: var(--space-none) var(--space-none) var(--radius-md) var(--radius-md); flex-direction: column; background: var(--color-surface-soft); }
+.activity-flow__step + .activity-flow__step::before { position: absolute; top: 50%; left: calc(var(--space-xl) * -1); width: var(--space-xl); color: var(--color-program-esl); text-align: center; font-size: var(--font-size-xl); line-height: 1; content: "→"; transform: translateY(-50%); }
 .activity-flow__stage { display: block; color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
-.activity-flow__name { display: block; margin-top: var(--space-sm); font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); line-height: var(--line-height-compact); }
-.activity-flow__desc { display: block; margin-top: var(--space-sm); color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-compact); }
+.activity-flow__name { display: block; font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); line-height: var(--line-height-compact); word-break: keep-all; }
+.activity-flow__desc { display: block; flex: 1; margin-top: var(--space-sm); color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-compact); word-break: keep-all; }
+/* The meter fills further at each step, so the growing scope is the message. */
+.activity-flow__scope { display: block; height: 0.25rem; margin-top: var(--space-lg); border-radius: var(--radius-pill); background: var(--color-border); }
+.activity-flow__scope-fill { display: block; height: 100%; border-radius: inherit; background: var(--color-program-esl); }
+.activity-flow__step:nth-child(1) .activity-flow__scope-fill { width: 20%; }
+.activity-flow__step:nth-child(2) .activity-flow__scope-fill { width: 40%; }
+.activity-flow__step:nth-child(3) .activity-flow__scope-fill { width: 60%; }
+.activity-flow__step:nth-child(4) .activity-flow__scope-fill { width: 80%; }
+.activity-flow__step:nth-child(5) .activity-flow__scope-fill { width: 100%; }
 .activity-flow--pair { max-width: 52rem; margin-top: var(--space-xl); grid-template-columns: repeat(2,1fr); }
 .activity-flow--four { grid-template-columns: repeat(4,1fr); }
 /* The ten levels read as five stages that grow, not as a table of rows. */
