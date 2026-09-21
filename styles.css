@@ -320,6 +320,7 @@ img { display: block; max-width: 100%; height: auto; }
 .course-compare tbody td { font-weight: var(--font-weight-semibold); }
 .course-compare tbody tr:hover th, .course-compare tbody tr:hover td { background: var(--color-program-esl-soft); }
 .course-compare .card__link { margin-top: 0; color: var(--color-program-esl); }
+.course-compare__label { display: none; }
 .curriculum-detail { display: grid; grid-template-columns: repeat(2,1fr); margin-top: var(--space-2xl); gap: var(--space-lg); }
 .curriculum-course { margin-top: var(--space-section); }
 .curriculum-course__header { max-width: 52rem; margin-bottom: var(--space-2xl); }
@@ -925,3 +926,33 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: 0.01ms; } }
+
+@media (max-width: 48rem) {
+  /* Too narrow for four columns, so each row becomes its own card. */
+  .course-compare, .course-compare tbody, .course-compare tr, .course-compare th, .course-compare td { display: block; }
+  .course-compare { min-width: 0; table-layout: auto; background: transparent; }
+  .course-compare thead { display: none; }
+  .course-compare tbody tr { padding: var(--space-lg); border: 0.0625rem solid var(--color-border); border-top: var(--size-border-emphasis) solid var(--color-program-esl); border-radius: var(--radius-md); background: var(--color-surface); }
+  .course-compare tbody tr + tr { margin-top: var(--space-md); border-top: var(--size-border-emphasis) solid var(--color-program-esl); }
+  .course-compare tbody tr + tr th, .course-compare tbody tr + tr td { border-top: 0; }
+  .course-compare th, .course-compare td { width: auto; padding: 0; }
+  .course-compare tbody th[scope="row"] { font-size: var(--font-size-xl); }
+  .course-compare tbody td { margin-top: var(--space-md); }
+  .course-compare tbody tr:hover th, .course-compare tbody tr:hover td { background: transparent; }
+  .course-compare__label { display: block; margin-bottom: var(--space-xs); color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
+  .table-wrapper:has(.course-compare) { border: 0; }
+  /* Same treatment for the overview comparison, group rows becoming headings. */
+  .course-table--compare, .course-table--compare tbody, .course-table--compare tr, .course-table--compare th, .course-table--compare td { display: block; }
+  .course-table--compare { min-width: 0; border-spacing: 0; }
+  .course-table--compare thead { display: none; }
+  .course-table--compare th, .course-table--compare td { padding: 0; text-align: left; }
+  .course-table--compare .course-table__group th { margin: var(--space-xl) 0 var(--space-md); padding: var(--space-sm) var(--space-md); }
+  .course-table--compare tbody tr:first-child .course-table__group th, .course-table--compare .course-table__group:first-child th { margin-top: 0; }
+  .course-table__row { padding: var(--space-lg); border: 0.0625rem solid var(--color-border); border-left: var(--size-border-emphasis) solid var(--color-row-accent); border-radius: var(--radius-md); background: var(--color-surface); }
+  .course-table__row + .course-table__row { margin-top: var(--space-md); }
+  .course-table__row th, .course-table__row td { border: 0; background: transparent; }
+  .course-table__row th[scope="row"] { border-radius: 0; font-size: var(--font-size-xl); }
+  .course-table__row td { margin-top: var(--space-md); }
+  .course-table__row td:last-child { border-radius: 0; text-align: left; }
+  .table-wrapper--compare { overflow-x: visible; }
+}
