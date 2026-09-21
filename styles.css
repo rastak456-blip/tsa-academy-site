@@ -295,7 +295,9 @@ img { display: block; max-width: 100%; height: auto; }
 /* Each course group runs as a full-bleed band, so ESL and IELTS read apart. */
 .section.section--program-group { --color-program-accent: var(--color-program-esl); padding-block: var(--space-2xl); background: var(--color-program-esl-soft); }
 .section.section--program-group--ielts { --color-program-accent: var(--color-program-ielts); background: var(--color-program-ielts-soft); }
-.section--program-group + .section--program-group { border-top: 0.0625rem solid var(--color-border); }
+/* The hero above sits on a near-identical cream, so the band needs an edge. */
+.section.section--program-group { border-top: 0.0625rem solid var(--color-border); }
+.section--program-group .section__eyebrow { color: var(--color-program-accent); }
 .section--program-group .curriculum-course__title { display: flex; align-items: center; gap: var(--space-md); color: var(--color-program-accent); }
 .section--program-group .curriculum-course__title::before { flex: none; width: 2rem; height: var(--size-border-emphasis); border-radius: var(--radius-pill); background: var(--color-program-accent); content: ""; }
 .section--program-group .card__link { color: var(--color-program-accent); }

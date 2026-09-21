@@ -784,8 +784,6 @@ const koreanTranslations = new Map([
   ['Program Overview', '과정 안내'],
   ['All Courses', '전체 과정 안내'],
   ['TSA courses matched to your learning goal', '학습 목표에 맞춘 TSA 교육과정'],
-  ['Every Program at a Glance', '전체 프로그램 한눈에 보기'],
-  ['Find the course that matches your English level and your goal.', '학습자의 영어 수준과 목표에 맞는 과정을 확인해 보세요.'],
   ['Understand and use English naturally in real life', '실생활에서 영어를 이해하고 자연스럽게 사용하기'],
   ['Speaking, Listening, Reading, and Grammar & Writing are strengthened step by step so students can use English in real situations.', '실생활에서 영어를 이해하고 자연스럽게 사용할 수 있도록 Speaking, Listening, Reading, Grammar & Writing을 단계적으로 강화합니다.'],
   ['A core course that builds every English skill in balance', '영어 전 영역을 균형 있게 학습하는 정규과정'],
