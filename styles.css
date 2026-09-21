@@ -994,6 +994,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .course-table__row { padding: var(--space-lg); border: 0.0625rem solid var(--color-border); border-left: var(--size-border-emphasis) solid var(--color-row-accent); border-radius: var(--radius-md); background: var(--color-surface); }
   .course-table__row + .course-table__row { margin-top: var(--space-md); }
   .course-table__row th, .course-table__row td { border: 0; background: transparent; }
+  .course-table__row th[scope="row"], .course-table__row td:last-child { border: 0; }
   .course-table__row th[scope="row"] { border-radius: 0; font-size: var(--font-size-xl); }
   .course-table__row td { margin-top: var(--space-md); }
   .course-table__row td:last-child { border-radius: 0; text-align: left; }
