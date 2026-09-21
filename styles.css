@@ -969,9 +969,11 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .course-compare__label { display: block; margin-bottom: var(--space-xs); color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
   .table-wrapper:has(.course-compare) { border: 0; }
   .course-table--period { min-width: 0; }
-  .class-tag { min-width: 0; }
   .course-table--period th, .course-table--period td { padding: var(--space-sm); }
-  .class-mix__segment { font-size: 0.6875rem; }
+  .course-table--period th[scope="row"] { white-space: nowrap; }
+  .class-tag { min-width: 0; white-space: nowrap; }
+  .class-mix { display: grid; gap: var(--space-xs); grid-template-columns: repeat(2,1fr); overflow: visible; }
+  .class-mix__segment { flex: none; min-height: 2rem; border-radius: var(--radius-sm); }
   /* Same treatment for the overview comparison, group rows becoming headings. */
   .course-table--compare, .course-table--compare tbody, .course-table--compare tr, .course-table--compare th, .course-table--compare td { display: block; }
   .course-table--compare { min-width: 0; border-spacing: 0; }
