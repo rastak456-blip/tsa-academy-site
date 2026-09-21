@@ -749,7 +749,8 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .class-mix__segment--big-group { color: var(--color-surface); background: var(--color-course-medium-group); }
 .class-mix__segment--elective { color: var(--color-primary-dark); background: var(--color-course-open); }
 .class-mix__segment--required { color: var(--color-surface); background: var(--color-primary); }
-.class-mix__segment--strong { box-shadow: inset 0 0 0 0.125rem rgb(255 255 255 / 0.55); font-size: var(--font-size-sm); letter-spacing: 0.02em; }
+.class-mix__segment--strong { display: flex; gap: var(--space-xs); box-shadow: inset 0 0 0 0.125rem rgb(255 255 255 / 0.55); font-size: var(--font-size-sm); letter-spacing: 0.02em; }
+.class-mix__flag { flex: none; padding: 0.125rem var(--space-xs); border-radius: var(--radius-sm); background: rgb(255 255 255 / 0.85); color: var(--color-text); font-size: 0.625rem; font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); text-transform: uppercase; }
 .class-mix__segment--strong.class-mix__segment--one-to-one { color: var(--color-text); background: var(--color-course-one-to-one-strong); }
 .class-mix__segment--strong.class-mix__segment--small-group { color: var(--color-surface); background: var(--color-course-small-group-strong); }
 .class-mix__segment--strong.class-mix__segment--big-group { color: var(--color-surface); background: var(--color-primary-dark); }

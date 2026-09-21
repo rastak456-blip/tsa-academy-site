@@ -837,6 +837,7 @@ const koreanTranslations = new Map([
   ['Course', '과정'],
   ['Main Learning Goal', '주요 학습 목표'],
   ['Daily Class Structure', '일일 운영 구성'],
+  ['Key', '핵심'],
   ['ESL PROGRAMS', 'ESL PROGRAMS'],
   ['IELTS PROGRAMS', 'IELTS PROGRAMS'],
   ['Balanced improvement across every area of English', '영어 전 영역의 균형 있는 향상'],
