@@ -782,6 +782,8 @@ const koreanTranslations = new Map([
   ['View ESL Courses', 'ESL 과정 보기'],
   ['View IELTS Courses', 'IELTS 과정 보기'],
   ['Program Overview', '과정 안내'],
+  ['All Courses', '전체 과정 안내'],
+  ['TSA courses matched to your learning goal', '학습 목표에 맞춘 TSA 교육과정'],
   ['Every Program at a Glance', '전체 프로그램 한눈에 보기'],
   ['Find the course that matches your English level and your goal.', '학습자의 영어 수준과 목표에 맞는 과정을 확인해 보세요.'],
   ['Understand and use English naturally in real life', '실생활에서 영어를 이해하고 자연스럽게 사용하기'],
