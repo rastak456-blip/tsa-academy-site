@@ -294,7 +294,7 @@ img { display: block; max-width: 100%; height: auto; }
 .course-table--compare th, .course-table--compare td { padding: var(--space-md) var(--space-lg); border-bottom: 0; text-align: left; }
 .course-table--compare thead th { padding-block: 0 var(--space-xs); color: var(--color-text-muted); background: transparent; font-size: var(--font-size-xs); letter-spacing: var(--letter-spacing-wide); }
 .course-table--compare thead th:last-child { text-align: right; }
-.course-table--compare .course-table__group th { padding-block: var(--space-sm); border-left: var(--size-border-emphasis) solid var(--color-row-accent); border-radius: var(--radius-sm); color: var(--color-row-accent); background: var(--color-surface-soft); font-size: var(--font-size-xs); }
+.course-table--compare .course-table__group th { padding-block: var(--space-sm); border-radius: var(--radius-sm); color: var(--color-surface); background: var(--color-row-accent); font-size: var(--font-size-xs); }
 .course-table--compare .course-table__group--esl { --color-row-accent: var(--color-program-esl); }
 .course-table--compare .course-table__group--ielts { --color-row-accent: var(--color-program-ielts); }
 .course-table__row--esl { --color-row-accent: var(--color-program-esl); }
