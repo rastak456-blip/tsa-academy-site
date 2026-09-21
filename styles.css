@@ -15,10 +15,12 @@
   --color-course-small-group: #5fa3c8;
   --color-course-medium-group: #2f4268;
   --color-course-open: #ebe7dc;
-  --color-program-esl: #274185;
-  --color-program-esl-soft: rgba(39,65,133,0.05);
-  --color-program-ielts: #5c3fa3;
-  --color-program-ielts-soft: rgba(92,63,163,0.06);
+  --color-program-esl: #9e5f0c;
+  --color-program-esl-dark: #764609;
+  --color-program-esl-soft: #faf7ef;
+  --color-program-ielts: #274185;
+  --color-program-ielts-dark: #182a5c;
+  --color-program-ielts-soft: #eef2fa;
   --color-level-beginner: #8cc441;
   --color-level-beginner-strong: #79af28;
   --color-level-low-intermediate: #ffae39;
@@ -719,8 +721,12 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .process-list--five { grid-template-columns: repeat(5,1fr); }
 .process-step__action { display: inline-flex; margin-top: var(--space-lg); color: var(--color-primary); align-items: center; gap: var(--space-xs); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); }
 
-/* IELTS pages keep the shared layout but run on the purple accent. */
-.page--ielts main { --color-primary: var(--color-program-ielts); --color-primary-dark: #452f7e; --color-accent: #cdbcf2; --color-accent-strong: #b49ceb; --color-icon-surface: #f1ecfb; }
+/* ESL runs warm and IELTS runs cool, so the two course families read apart. */
+.page--esl main { --color-primary: var(--color-program-esl); --color-primary-dark: var(--color-program-esl-dark); --color-accent: #f2d9a8; --color-accent-strong: #e8c483; --color-icon-surface: #fbf3e4; }
+.page--esl .section:nth-of-type(odd):where(:not(.section--hero)) { background: var(--color-program-esl-soft); }
+.page--esl .section--curriculum-hero { background: var(--color-program-esl-soft); }
+.page--ielts .section:nth-of-type(odd):where(:not(.section--hero)) { background: var(--color-program-ielts-soft); }
+.page--ielts .section--curriculum-hero { background: var(--color-program-ielts-soft); }
 .course-table__highlight { background: var(--color-program-ielts-soft); font-weight: var(--font-weight-bold); }
 .course-table thead th.course-table__highlight { background: var(--color-program-ielts); }
 /* One month per course, so the Mock Test rhythm is visible rather than stated. */
