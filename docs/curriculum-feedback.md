@@ -95,7 +95,7 @@ git worktree add "../TSA어학원 사이트-baseline" main
 
 ## 5. 레벨 시스템 페이지 (`pages/curriculum-levels.html`)
 
-- [ ] **페이지 구성 차별화** [개선] — 인포그래픽형 구성, `Level Assessment → Level Placement → Level-Matched Learning → Progress Review` 흐름과 Level 1–10 경로 부각
+- [x] **페이지 구성 차별화** [개선] — 인포그래픽형 구성, `Level Assessment → Level Placement → Level-Matched Learning → Progress Review` 흐름과 Level 1–10 경로 부각
 
 ## 6. 공통 문구 및 표시 수정
 

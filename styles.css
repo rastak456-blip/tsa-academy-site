@@ -740,6 +740,27 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .activity-flow__name { display: block; margin-top: var(--space-sm); font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); line-height: var(--line-height-compact); }
 .activity-flow__desc { display: block; margin-top: var(--space-sm); color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-compact); }
 .activity-flow--pair { max-width: 52rem; margin-top: var(--space-xl); grid-template-columns: repeat(2,1fr); }
+.activity-flow--four { grid-template-columns: repeat(4,1fr); }
+/* The ten levels read as five stages that grow, not as a table of rows. */
+.level-ladder { display: grid; margin: 0; padding: 0; gap: var(--space-lg); list-style: none; }
+.level-ladder__band { padding: var(--space-xl); border-left: 0.5rem solid var(--color-level-beginner-strong); border-radius: var(--space-none) var(--radius-lg) var(--radius-lg) var(--space-none); background: var(--color-level-beginner-soft); }
+.level-ladder__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-md); }
+.level-ladder__stage { font-size: var(--font-size-xl); font-weight: var(--font-weight-extra-bold); line-height: var(--line-height-tight); }
+.level-ladder__meta { color: var(--color-text-muted); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); letter-spacing: 0.06em; }
+.level-ladder__activity { margin: var(--space-sm) 0 var(--space-lg); font-weight: var(--font-weight-semibold); }
+.level-ladder__steps { display: grid; margin: 0; padding: 0; gap: var(--space-sm); grid-template-columns: repeat(2,1fr); list-style: none; }
+.level-ladder__step { padding: var(--space-md); border-radius: var(--radius-sm); background: var(--color-surface); }
+.level-ladder__number { display: block; color: var(--color-primary); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
+.level-ladder__desc { display: block; margin-top: var(--space-xs); color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-compact); }
+.level-ladder__band--low-intermediate { border-left-color: var(--color-level-low-intermediate-strong); background: var(--color-level-low-intermediate-soft); }
+.level-ladder__band--intermediate { border-left-color: var(--color-level-intermediate-strong); background: var(--color-level-intermediate-soft); }
+.level-ladder__band--high-intermediate { border-left-color: var(--color-level-high-intermediate-strong); background: var(--color-level-high-intermediate-soft); }
+.level-ladder__band--advanced { border-left-color: var(--color-level-advanced-strong); background: var(--color-level-advanced-soft); }
+/* Each stage sits a little further in, so the climb is visible down the page. */
+.level-ladder__band--low-intermediate { margin-left: var(--space-md); }
+.level-ladder__band--intermediate { margin-left: var(--space-xl); }
+.level-ladder__band--high-intermediate { margin-left: var(--space-2xl); }
+.level-ladder__band--advanced { margin-left: calc(var(--space-2xl) + var(--space-md)); }
 .activity-flow--inverse .activity-flow__step { border-top-color: var(--color-accent); background: var(--color-white-glass); }
 .activity-flow--inverse .activity-flow__stage, .activity-flow--inverse .activity-flow__desc { color: var(--color-white-muted); }
 .activity-flow--inverse .activity-flow__step + .activity-flow__step::before { color: var(--color-accent); }
@@ -797,7 +818,9 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .facility-group__list--cafeteria { grid-template-columns: repeat(2,1fr); }
   .content-grid--three, .content-grid--four, .process-list { grid-template-columns: repeat(2,1fr); }
   .content-grid--class-types > *, .content-grid--class-types > :nth-child(4) { grid-column: auto; }
-  .check-list, .mock-calendar { grid-template-columns: 1fr; }
+  .check-list, .mock-calendar, .activity-flow--four { grid-template-columns: 1fr; }
+  .level-ladder__band, .level-ladder__band--low-intermediate, .level-ladder__band--intermediate, .level-ladder__band--high-intermediate, .level-ladder__band--advanced { margin-left: 0; }
+  .level-ladder__steps { grid-template-columns: 1fr; }
   .activity-flow { grid-template-columns: 1fr; gap: var(--space-xl); }
   .activity-flow__step + .activity-flow__step::before { top: calc(var(--space-xl) * -1); left: 50%; width: auto; content: "↓"; transform: translateX(-50%); }
   .curriculum-course--esl, .curriculum-course--ielts { padding: var(--space-lg); }
