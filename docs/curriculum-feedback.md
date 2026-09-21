@@ -73,19 +73,19 @@ git worktree add "../TSA어학원 사이트-baseline" main
 
 ## 3. ESL 과정별 상세 페이지 (`pages/curriculum-esl-*.html` 4종)
 
-- [ ] **과정명 강조** [개선] — 과정명을 가장 크게, 한 줄 설명과 세부 설명을 아래로
-- [ ] **8시간·6시간 탭** [개선] — 선택 탭은 브랜드 컬러 배경 + 흰색 글자, 비선택 탭은 흰색 배경 + 컬러 테두리. 버튼과 본문 사이 여백 확보
-- [ ] **추천 학습자 영역** [개선] — 라인 아이콘 + 체크 표시 체크리스트, 이모지 미사용
-- [ ] **주요 학습 내용 가독성** [개선] — 아이콘·영역명·한 줄 설명의 2열 또는 3열 카드
-- [ ] **시간표 색상 규칙** [개선] — 수업 유형별 색상·라벨을 정하고 ESL·IELTS 상세 페이지 전체에 동일 적용
+- [x] **과정명 강조** [개선] — 과정명을 가장 크게, 한 줄 설명과 세부 설명을 아래로
+- [x] **8시간·6시간 탭** [개선] — 선택 탭은 브랜드 컬러 배경 + 흰색 글자, 비선택 탭은 흰색 배경 + 컬러 테두리. 버튼과 본문 사이 여백 확보
+- [x] **추천 학습자 영역** [개선] — 라인 아이콘 + 체크 표시 체크리스트, 이모지 미사용
+- [x] **주요 학습 내용 가독성** [개선] — 아이콘·영역명·한 줄 설명의 2열 또는 3열 카드
+- [x] **시간표 색상 규칙** [개선] — 수업 유형별 색상·라벨을 정하고 ESL·IELTS 상세 페이지 전체에 동일 적용
 
 ### 3.1 과정별 추가 요청
 
 - [-] **Regular ESL 상단 이미지** — 성인 학습자와 강사의 1:1 수업 이미지 (1.1과 동일 사유로 보류)
-- [ ] **Regular+ ESL** — 일일 수업 구성에서 `Small Group × 4` 강조
-- [ ] **Regular+ ESL** — 공식 수업명 `Group Communication`은 시간표에서 영문 유지
-- [ ] **Intensive Speaking** — 일일 수업 구성에서 `1:1 × 5` 강조
-- [ ] **Power Speaking** — Level 1–4 `Presentation Skills & Practice` → Level 5+ `Debate Skills & Practice` 확장 흐름 도식
+- [x] **Regular+ ESL** — 일일 수업 구성에서 `Small Group × 4` 강조
+- [x] **Regular+ ESL** — 공식 수업명 `Group Communication`은 시간표에서 영문 유지
+- [x] **Intensive Speaking** — 일일 수업 구성에서 `1:1 × 5` 강조
+- [x] **Power Speaking** — Level 1–4 `Presentation Skills & Practice` → Level 5+ `Debate Skills & Practice` 확장 흐름 도식
 
 ## 4. IELTS 과정 메인 및 상세 페이지
 
