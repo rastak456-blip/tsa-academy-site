@@ -89,9 +89,9 @@ git worktree add "../TSA어학원 사이트-baseline" main
 
 ## 4. IELTS 과정 메인 및 상세 페이지
 
-- [ ] **ESL 과정과 시각적 구분** [개선] — 네이비 또는 보라 계열 강조색, Mock Test와 목표 Band 관리 부각
-- [ ] **과정 카드 버튼 위치** [개선] — 3개 카드 높이 통일, 버튼 하단 왼쪽 고정
-- [ ] **Mock Test & Review 시각화** [개선] — 과정별 Mock Test 주기 캘린더, `Mock Test → Review / Error Analysis → Clinic → 보완 학습` 흐름 시각화
+- [x] **ESL 과정과 시각적 구분** [개선] — 네이비 또는 보라 계열 강조색, Mock Test와 목표 Band 관리 부각
+- [x] **과정 카드 버튼 위치** [개선] — 3개 카드 높이 통일, 버튼 하단 왼쪽 고정
+- [x] **Mock Test & Review 시각화** [개선] — 과정별 Mock Test 주기 캘린더, `Mock Test → Review / Error Analysis → Clinic → 보완 학습` 흐름 시각화
 
 ## 5. 레벨 시스템 페이지 (`pages/curriculum-levels.html`)
 
