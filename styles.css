@@ -195,8 +195,10 @@ img { display: block; max-width: 100%; height: auto; }
 .brand__image { width: var(--size-brand-compact); max-height: var(--size-brand-header-height); filter: brightness(0); object-fit: contain; object-position: left center; }
 .main-menu { display: flex; width: auto; align-items: center; gap: var(--space-lg); }
 .main-menu__group { position: relative; min-width: 0; }
+.language-menu__icon { flex: none; width: 0.625rem; height: 0.625rem; fill: none; stroke: currentcolor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; transition: transform var(--transition-base); }
+.language-menu__button[aria-expanded="true"] .language-menu__icon { transform: rotate(180deg); }
 .main-menu__button { display: flex; align-items: center; border: 0; padding: var(--space-sm) var(--space-md); border-radius: var(--radius-pill); gap: var(--space-xs); color: inherit; background: transparent; font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); cursor: pointer; }
-.main-menu__icon { display: inline; transition: transform var(--transition-base); }
+.main-menu__icon { flex: none; width: 0.75rem; height: 0.75rem; fill: none; stroke: currentcolor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; transition: transform var(--transition-base); }
 .main-menu__button[aria-expanded="true"] .main-menu__icon { transform: rotate(180deg); }
 .main-menu__group:hover > .main-menu__button .main-menu__icon, .main-menu__group:focus-within > .main-menu__button .main-menu__icon { transform: rotate(180deg); }
 .main-menu__submenu { position: absolute; z-index: var(--layer-dropdown); top: calc(100% + var(--space-sm)); left: 50%; display: none; width: var(--size-navigation-dropdown); padding: var(--space-sm); border: 0.0625rem solid var(--color-border); border-radius: var(--radius-md); gap: var(--space-xs); color: var(--color-text); background: var(--color-surface); box-shadow: var(--shadow-card); transform: translateX(-50%); }
@@ -207,7 +209,7 @@ img { display: block; max-width: 100%; height: auto; }
 .main-menu__group--current > .main-menu__button { color: var(--color-primary-dark); background: var(--color-accent); }
 .main-menu__subgroup { position: relative; }
 .main-menu__sublink--parent { display: flex; align-items: center; justify-content: space-between; gap: var(--space-xs); }
-.main-menu__subicon { color: var(--color-text-muted); font-weight: var(--font-weight-bold); }
+.main-menu__subicon { flex: none; width: 0.75rem; height: 0.75rem; color: var(--color-text-muted); fill: none; stroke: currentcolor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
 .main-menu__subsubmenu { position: absolute; z-index: var(--layer-dropdown); top: calc(var(--space-sm) * -1); left: calc(100% + var(--space-sm)); display: none; width: var(--size-navigation-dropdown); padding: var(--space-sm); border: 0.0625rem solid var(--color-border); border-radius: var(--radius-md); gap: var(--space-xs); color: var(--color-text); background: var(--color-surface); box-shadow: var(--shadow-card); }
 .main-menu__subsubmenu::before { position: absolute; top: 0; bottom: 0; left: calc(var(--space-sm) * -1); width: var(--space-sm); content: ""; }
 .main-menu__subgroup:hover .main-menu__subsubmenu, .main-menu__subgroup:focus-within .main-menu__subsubmenu, .main-menu__subgroup--open .main-menu__subsubmenu { display: grid; }
@@ -886,7 +888,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .main-menu--open { display: flex; }
   .main-menu { max-height: calc(var(--size-viewport) - var(--size-header-compact) - var(--size-header-utility) - var(--space-xl)); overflow-y: auto; }
   .main-menu__group { padding-left: 0; border-left: 0; }
-  .main-menu__icon { display: inline; }
+  .main-menu__icon { display: block; }
   .main-menu__submenu { position: static; z-index: auto; display: none; width: 100%; margin-top: var(--space-xs); padding: 0 0 0 var(--space-md); border: 0; color: var(--color-text-muted); background: transparent; box-shadow: none; transform: none; }
   .main-menu__group:hover .main-menu__submenu, .main-menu__group--open .main-menu__submenu { display: grid; }
   .main-menu__sublink { padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: var(--font-size-sm); }
