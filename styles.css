@@ -713,7 +713,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .course-summary__item { padding: var(--space-xs) var(--space-md); border-radius: var(--radius-pill); color: var(--color-primary-dark); background: var(--color-icon-surface); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
 /* Summary chips repeat the timetable colours so both read as one system. */
 .course-summary__item--one-to-one { color: var(--color-primary-dark); background: var(--color-course-one-to-one); }
-.course-summary__item--small-group { color: var(--color-surface); background: var(--color-course-small-group); }
+.course-summary__item--small-group { color: var(--color-text); background: var(--color-course-small-group); }
 .course-summary__item--big-group { color: var(--color-surface); background: var(--color-course-medium-group); }
 .course-summary__item--elective { color: var(--color-primary-dark); background: var(--color-course-open); }
 .course-summary__item--required { color: var(--color-surface); background: var(--color-primary); }
@@ -728,10 +728,35 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 
 .class-tag { display: inline-block; min-width: 7rem; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-pill); color: var(--color-primary-dark); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
 .class-tag--one-to-one { background: var(--color-course-one-to-one); }
-.class-tag--small-group { color: var(--color-surface); background: var(--color-course-small-group); }
+.class-tag--small-group { color: var(--color-text); background: var(--color-course-small-group); }
 .class-tag--big-group { color: var(--color-surface); background: var(--color-course-medium-group); }
 .class-tag--elective { background: var(--color-course-open); }
 .class-tag--required { color: var(--color-surface); background: var(--color-primary); }
+/* The day's mix as one bar, each class type taking its share of the width. */
+.class-mix { display: flex; overflow: hidden; margin: 0 0 var(--space-lg); padding: 0; border-radius: var(--radius-sm); list-style: none; }
+.class-mix__segment { display: flex; min-height: 2.5rem; padding-inline: var(--space-xs); align-items: center; justify-content: center; overflow: hidden; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); text-align: center; white-space: nowrap; }
+.class-mix__segment--span-1 { flex: 1; }
+.class-mix__segment--span-2 { flex: 2; }
+.class-mix__segment--span-3 { flex: 3; }
+.class-mix__segment--span-4 { flex: 4; }
+.class-mix__segment--span-5 { flex: 5; }
+.class-mix__segment--span-6 { flex: 6; }
+.class-mix__segment--span-8 { flex: 8; }
+.class-mix__segment--one-to-one { color: var(--color-primary-dark); background: var(--color-course-one-to-one); }
+.class-mix__segment--small-group { color: var(--color-text); background: var(--color-course-small-group); }
+.class-mix__segment--big-group { color: var(--color-surface); background: var(--color-course-medium-group); }
+.class-mix__segment--elective { color: var(--color-primary-dark); background: var(--color-course-open); }
+.class-mix__segment--required { color: var(--color-surface); background: var(--color-primary); }
+/* Each period reads as its own row, carrying its class colour on the left edge. */
+.course-table--period { border-collapse: separate; border-spacing: 0 var(--space-xs); min-width: 34rem; }
+.course-table--period th, .course-table--period td { border-bottom: 0; background: var(--color-surface-soft); }
+.course-period th[scope="row"] { border-left: var(--size-border-emphasis) solid var(--color-period-accent); border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
+.course-period td:last-child { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; color: var(--color-text); font-weight: var(--font-weight-semibold); }
+.course-period--one-to-one { --color-period-accent: var(--color-course-one-to-one); }
+.course-period--small-group { --color-period-accent: var(--color-course-small-group); }
+.course-period--big-group { --color-period-accent: var(--color-course-medium-group); }
+.course-period--elective { --color-period-accent: var(--color-course-open); }
+.course-period--required { --color-period-accent: var(--color-primary); }
 .course-legend__item--big-group::before { background: var(--color-course-medium-group); }
 .course-legend__item--elective::before { background: var(--color-course-open); }
 .course-legend__item--required::before { background: var(--color-primary); }
@@ -942,6 +967,11 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .course-compare tbody tr:hover th, .course-compare tbody tr:hover td { background: transparent; }
   .course-compare__label { display: block; margin-bottom: var(--space-xs); color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
   .table-wrapper:has(.course-compare) { border: 0; }
+  .course-table--period { min-width: 0; }
+  .class-tag { min-width: 0; }
+  .course-table--period th, .course-table--period td { padding: var(--space-sm); }
+  .class-mix__segment { font-size: 0.6875rem; }
+  .table-wrapper:has(.course-table--period) { border: 0; }
   /* Same treatment for the overview comparison, group rows becoming headings. */
   .course-table--compare, .course-table--compare tbody, .course-table--compare tr, .course-table--compare th, .course-table--compare td { display: block; }
   .course-table--compare { min-width: 0; border-spacing: 0; }
