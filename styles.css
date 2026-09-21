@@ -308,16 +308,12 @@ img { display: block; max-width: 100%; height: auto; }
 .course-table__cell--action { width: 0; text-align: right; }
 .table-action { display: inline-flex; min-height: 2.25rem; padding-inline: var(--space-md); border: 0.0625rem solid var(--color-row-accent); border-radius: var(--radius-pill); align-items: center; gap: var(--space-xs); color: var(--color-row-accent); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); white-space: nowrap; transition: color var(--transition-base), background var(--transition-base); }
 .table-action:hover, .table-action:focus-visible { color: var(--color-surface); background: var(--color-row-accent); }
-/* Four courses side by side: one column each, one row per attribute. */
-.table-wrapper--matrix { border: 0; }
-.course-matrix { width: 100%; min-width: 52rem; border-collapse: separate; border-spacing: var(--space-sm) 0; table-layout: fixed; }
-.course-matrix th, .course-matrix td { padding: var(--space-md) var(--space-lg); text-align: center; vertical-align: middle; }
-.course-matrix thead td { width: 10rem; }
-.course-matrix thead th { border-top: var(--size-border-emphasis) solid var(--color-program-esl); border-radius: var(--radius-md) var(--radius-md) 0 0; color: var(--color-program-esl); background: var(--color-surface); font-size: var(--font-size-lg); line-height: var(--line-height-compact); }
-.course-matrix tbody th[scope="row"] { color: var(--color-text-muted); background: transparent; text-align: left; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
-.course-matrix tbody td { border-top: 0.0625rem solid var(--color-border); background: var(--color-surface); color: var(--color-text); font-weight: var(--font-weight-semibold); }
-.course-matrix__actions td { border-radius: 0 0 var(--radius-md) var(--radius-md); }
-.course-matrix .table-action { --color-row-accent: var(--color-program-esl); }
+/* One card per ESL course: keyword, name, class structure, then the link. */
+.course-card { display: flex; padding: var(--space-xl); border: 0.0625rem solid var(--color-border); border-top: var(--size-border-emphasis) solid var(--color-program-esl); border-radius: var(--radius-md); flex-direction: column; background: var(--color-surface); }
+.course-card__keyword { align-self: flex-start; padding: var(--space-xs) var(--space-md); border-radius: var(--radius-pill); color: var(--color-program-esl); background: var(--color-icon-surface); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
+.course-card__name { margin: var(--space-lg) 0 0; font-size: var(--font-size-xl); line-height: var(--line-height-tight); }
+.course-card__structure { flex: 1; margin: var(--space-sm) 0 var(--space-lg); color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-compact); }
+.course-card .table-action { --color-row-accent: var(--color-program-esl); align-self: flex-start; }
 .curriculum-detail { display: grid; grid-template-columns: repeat(2,1fr); margin-top: var(--space-2xl); gap: var(--space-lg); }
 .curriculum-course { margin-top: var(--space-section); }
 .curriculum-course__header { max-width: 52rem; margin-bottom: var(--space-2xl); }
