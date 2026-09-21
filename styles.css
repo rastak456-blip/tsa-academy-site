@@ -228,6 +228,7 @@ img { display: block; max-width: 100%; height: auto; }
 }
 
 .section { padding-block: var(--space-section); }
+main [id] { scroll-margin-top: calc(var(--size-header-compact) + var(--size-header-utility) + var(--space-lg)); }
 .section:nth-of-type(odd):where(:not(.section--hero)) { background: var(--color-surface-warm); }
 .section__header { max-width: 51rem; margin-bottom: var(--space-2xl); }
 .section__eyebrow { margin: 0 0 var(--space-md); color: var(--color-primary); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.18em; }
