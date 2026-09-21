@@ -304,6 +304,13 @@ img { display: block; max-width: 100%; height: auto; }
 .course-table__row td { color: var(--color-text-muted); }
 .course-table__row td:last-child { border-right: 0.0625rem solid var(--color-border); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; text-align: right; }
 .course-pill { display: inline-block; padding: var(--space-xs) var(--space-md); border-radius: var(--radius-pill); color: var(--color-primary); background: var(--color-icon-surface); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); white-space: nowrap; }
+.visually-hidden { position: absolute; width: var(--size-visually-hidden); height: var(--size-visually-hidden); overflow: hidden; clip-path: inset(var(--ratio-half)); white-space: nowrap; }
+.course-table__cell--action { width: 0; text-align: right; }
+.table-action { display: inline-flex; min-height: 2.25rem; padding-inline: var(--space-md); border: 0.0625rem solid var(--color-row-accent); border-radius: var(--radius-pill); align-items: center; gap: var(--space-xs); color: var(--color-row-accent); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); white-space: nowrap; transition: color var(--transition-base), background var(--transition-base); }
+.table-action:hover, .table-action:focus-visible { color: var(--color-surface); background: var(--color-row-accent); }
+/* With a button in the last column the structure cell stops being the row's end. */
+.course-table--esl-compare .course-table__row td:nth-child(3) { border-right: 0; border-radius: 0; text-align: right; }
+.course-table--esl-compare .course-table__row td:last-child { border-left: 0; }
 .curriculum-detail { display: grid; grid-template-columns: repeat(2,1fr); margin-top: var(--space-2xl); gap: var(--space-lg); }
 .curriculum-course { margin-top: var(--space-section); }
 .curriculum-course__header { max-width: 52rem; margin-bottom: var(--space-2xl); }
@@ -795,8 +802,6 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .activity-flow--inverse .activity-flow__step { border-top-color: var(--color-accent); background: var(--color-white-glass); }
 .activity-flow--inverse .activity-flow__stage, .activity-flow--inverse .activity-flow__desc { color: var(--color-white-muted); }
 .activity-flow--inverse .activity-flow__step + .activity-flow__step::before { color: var(--color-accent); }
-.course-table__link { color: var(--color-primary); font-weight: var(--font-weight-bold); }
-.course-table__link:hover, .course-table__link:focus-visible { text-decoration: underline; }
 .level-path { display: grid; margin: 0; padding: 0; gap: var(--space-sm); grid-template-columns: repeat(5,1fr); align-items: end; list-style: none; }
 .level-path__item { padding: var(--space-lg); border-radius: var(--radius-md) var(--radius-md) var(--space-none) var(--space-none); color: var(--color-surface); }
 .level-path__item--beginner { min-height: 11rem; background: var(--color-level-beginner-strong); }

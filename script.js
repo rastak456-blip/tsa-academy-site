@@ -891,6 +891,8 @@ const koreanTranslations = new Map([
   ['Maximum Speaking', 'Speaking 극대화'],
   ['A course that completes real-life English step by step', '실생활 영어 능력을 단계적으로 완성하는 과정'],
   ['ESL Course Comparison', 'ESL 과정 비교'],
+  ['View Details', '자세히 보기'],
+  ['Course details', '과정 상세'],
   ['Key Idea', '핵심 키워드'],
   ['Main Class Structure', '주요 수업 구성'],
   ['Collaboration', '협업'],
