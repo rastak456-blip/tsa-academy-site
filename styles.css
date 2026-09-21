@@ -748,6 +748,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .class-mix__segment--elective { color: var(--color-primary-dark); background: var(--color-course-open); }
 .class-mix__segment--required { color: var(--color-surface); background: var(--color-primary); }
 /* Each period reads as its own row, carrying its class colour on the left edge. */
+.table-wrapper:has(.course-table--period) { border: 0; border-radius: 0; }
 .course-table--period { border-collapse: separate; border-spacing: 0 var(--space-xs); min-width: 34rem; }
 .course-table--period th, .course-table--period td { border-bottom: 0; background: var(--color-surface-soft); }
 .course-period th[scope="row"] { border-left: var(--size-border-emphasis) solid var(--color-period-accent); border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
@@ -971,7 +972,6 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .class-tag { min-width: 0; }
   .course-table--period th, .course-table--period td { padding: var(--space-sm); }
   .class-mix__segment { font-size: 0.6875rem; }
-  .table-wrapper:has(.course-table--period) { border: 0; }
   /* Same treatment for the overview comparison, group rows becoming headings. */
   .course-table--compare, .course-table--compare tbody, .course-table--compare tr, .course-table--compare th, .course-table--compare td { display: block; }
   .course-table--compare { min-width: 0; border-spacing: 0; }
