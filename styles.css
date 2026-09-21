@@ -21,6 +21,8 @@
   --color-program-ielts: #274185;
   --color-program-ielts-dark: #182a5c;
   --color-program-ielts-soft: #eef2fa;
+  --color-program-esl-on-dark: #f0b24a;
+  --color-program-ielts-on-dark: #86d4ff;
   --color-level-beginner: #8cc441;
   --color-level-beginner-strong: #79af28;
   --color-level-low-intermediate: #ffae39;
@@ -287,6 +289,25 @@ img { display: block; max-width: 100%; height: auto; }
 .course-table__group th { color: var(--color-primary); background: var(--color-surface-soft); text-align: left; font-size: var(--font-size-sm); letter-spacing: 0.04em; }
 .course-table__group--esl th { color: var(--color-surface); background: var(--color-program-esl); }
 .course-table__group--ielts th { color: var(--color-surface); background: var(--color-program-ielts); }
+
+/* The comparison reads as a stack of rows on a dark panel, one row per course. */
+.section.section--compare { color: var(--color-surface); background: var(--color-primary-dark); }
+.section--compare .section__eyebrow, .section--compare .section__desc { color: var(--color-surface); }
+.section--compare .table-wrapper { border: 0; }
+.course-table--compare { min-width: 46rem; border-collapse: separate; border-spacing: 0 var(--space-sm); background: transparent; }
+.course-table--compare th, .course-table--compare td { padding: var(--space-md) var(--space-lg); border-bottom: 0; text-align: left; }
+.course-table--compare thead th { padding-block: 0 var(--space-xs); color: var(--color-accent); background: transparent; font-size: var(--font-size-xs); letter-spacing: var(--letter-spacing-wide); }
+.course-table--compare thead th:last-child { text-align: right; }
+.course-table--compare .course-table__group th { padding-block: var(--space-sm); border-left: var(--size-border-emphasis) solid var(--color-row-accent); border-radius: var(--radius-sm); color: var(--color-row-accent); background: var(--color-white-glass); font-size: var(--font-size-xs); }
+.course-table--compare .course-table__group--esl { --color-row-accent: var(--color-program-esl-on-dark); }
+.course-table--compare .course-table__group--ielts { --color-row-accent: var(--color-program-ielts-on-dark); }
+.course-table__row--esl { --color-row-accent: var(--color-program-esl-on-dark); }
+.course-table__row--ielts { --color-row-accent: var(--color-program-ielts-on-dark); }
+.course-table__row td, .course-table__row th { background: var(--color-white-glass); }
+.course-table__row th[scope="row"] { border-left: var(--size-border-emphasis) solid var(--color-row-accent); border-radius: var(--radius-sm) 0 0 var(--radius-sm); color: var(--color-row-accent); font-size: var(--font-size-base); }
+.course-table__row td { color: var(--color-white-muted); }
+.course-table__row td:last-child { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; text-align: right; }
+.course-pill { display: inline-block; padding: var(--space-xs) var(--space-md); border-radius: var(--radius-pill); color: var(--color-accent); background: rgb(134 212 255 / 0.16); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); white-space: nowrap; }
 .curriculum-detail { display: grid; grid-template-columns: repeat(2,1fr); margin-top: var(--space-2xl); gap: var(--space-lg); }
 .curriculum-course { margin-top: var(--space-section); }
 .curriculum-course__header { max-width: 52rem; margin-bottom: var(--space-2xl); }
