@@ -725,9 +725,9 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 
 /* ESL runs warm and IELTS runs cool, so the two course families read apart. */
 .page--esl main { --color-primary: var(--color-program-esl); --color-primary-dark: var(--color-program-esl-dark); --color-accent: #f2d9a8; --color-accent-strong: #e8c483; --color-icon-surface: #fbf3e4; }
-.page--esl .section:nth-of-type(odd):where(:not(.section--hero)) { background: var(--color-program-esl-soft); }
+.page--esl .section:nth-of-type(odd):where(:not(.section--hero, .section--course-cta)) { background: var(--color-program-esl-soft); }
 .page--esl .section--curriculum-hero { background: var(--color-program-esl-soft); }
-.page--ielts .section:nth-of-type(odd):where(:not(.section--hero)) { background: var(--color-program-ielts-soft); }
+.page--ielts .section:nth-of-type(odd):where(:not(.section--hero, .section--course-cta)) { background: var(--color-program-ielts-soft); }
 .page--ielts .section--curriculum-hero { background: var(--color-program-ielts-soft); }
 .course-table__highlight { background: var(--color-program-ielts-soft); font-weight: var(--font-weight-bold); }
 .course-table thead th.course-table__highlight { background: var(--color-program-ielts); }
