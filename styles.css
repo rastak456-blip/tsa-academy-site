@@ -984,7 +984,6 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .course-table--period th[scope="row"] { font-size: var(--font-size-xs); }
   .class-mix { display: grid; gap: var(--space-xs); grid-template-columns: repeat(2,1fr); overflow: visible; }
   .class-mix__segment { flex: none; min-height: 2rem; padding-block: var(--space-xs); border-radius: var(--radius-sm); white-space: normal; }
-  .class-mix__segment--strong { grid-column: 1 / -1; }
   /* Same treatment for the overview comparison, group rows becoming headings. */
   .course-table--compare, .course-table--compare tbody, .course-table--compare tr, .course-table--compare th, .course-table--compare td { display: block; }
   .course-table--compare { min-width: 0; border-spacing: 0; }
