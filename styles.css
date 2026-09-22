@@ -535,8 +535,8 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .card--feature .card__title { margin-top: var(--space-2xl); }
 /* The grid already levels each row, so the card does not need a floor of its own. */
 .page--home .card--feature { min-height: 0; }
-.page--home .card--feature .card__number { display: flex; align-items: center; gap: var(--space-sm); letter-spacing: 0.12em; }
-.page--home .card--feature .card__number::before { flex: none; width: 1.5rem; height: var(--size-border-emphasis); border-radius: var(--radius-pill); background: var(--color-accent-strong); content: ""; }
+.page--home .card--feature .card__number { display: block; letter-spacing: 0.12em; }
+.feature-card__icon { display: inline-grid; margin-bottom: var(--space-md); }
 .page--home .card--feature .card__title { margin-top: var(--space-lg); line-height: 1.25; }
 .page--home .card--feature .card__desc { font-size: var(--font-size-sm); }
 .card__desc { margin: var(--space-md) 0 0; color: var(--color-text-muted); }
@@ -617,9 +617,9 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .card--program { border: 0.0625rem solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); box-shadow: var(--shadow-card); }
 .card--program .card__title { font-size: var(--font-size-lg); }
 .card--program .card__desc { margin-top: var(--space-md); font-size: var(--font-size-sm); }
-.program-card__icon, .teacher-point__icon { display: inline-grid; width: var(--size-icon-circle); height: var(--size-icon-circle); border-radius: var(--radius-pill); color: var(--color-primary); background: var(--color-icon-surface); place-items: center; }
+.program-card__icon, .teacher-point__icon, .feature-card__icon { display: inline-grid; width: var(--size-icon-circle); height: var(--size-icon-circle); border-radius: var(--radius-pill); color: var(--color-primary); background: var(--color-icon-surface); place-items: center; }
 .program-card__icon { margin-bottom: var(--space-lg); }
-.program-card__icon svg, .teacher-point__icon svg { width: var(--space-xl); height: var(--space-xl); fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: var(--stroke-width-icon); }
+.program-card__icon svg, .teacher-point__icon svg, .feature-card__icon svg { width: var(--space-xl); height: var(--space-xl); fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: var(--stroke-width-icon); }
 .program-card__tag { display: block; margin-bottom: var(--space-xs); color: var(--color-course-one-to-one); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.12em; text-transform: uppercase; }
 .program-card__subtitle { margin: var(--space-xs) 0 0; color: var(--color-text); font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); }
 .page--home .card--program .card__title { font-size: var(--font-size-xl); letter-spacing: -0.01em; }
