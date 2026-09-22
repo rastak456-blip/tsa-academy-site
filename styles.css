@@ -239,13 +239,9 @@ main [id] { scroll-margin-top: calc(var(--size-header-compact) + var(--size-head
 .section__title--figure { display: grid; justify-items: start; gap: var(--space-xs); }
 .section__figure { display: block; color: var(--color-primary); font-size: var(--font-size-display); font-weight: var(--font-weight-extra-bold); letter-spacing: -0.03em; line-height: var(--line-height-tight); }
 .section__figure-label { display: block; font-size: var(--font-size-heading); line-height: 1.03; }
-.section__desc { margin: var(--space-lg) 0 0; color: var(--color-text-muted); font-size: var(--font-size-lg); }
+.section__desc { max-width: 40rem; margin: var(--space-lg) 0 0; color: var(--color-text-muted); font-size: var(--font-size-lg); }
 .section__lead { margin: var(--space-md) 0 0; font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); line-height: var(--line-height-compact); }
 .section__note { margin: var(--space-xl) 0 0; color: var(--color-text-muted); font-size: var(--font-size-sm); }
-/* The home page is one long scroll, so every eyebrow carries a marker and every description keeps a readable measure. */
-.page--home .section__eyebrow { display: flex; align-items: center; gap: var(--space-sm); }
-.page--home .section__eyebrow::before { flex: none; width: 1.5rem; height: 0.125rem; border-radius: var(--radius-pill); background: currentcolor; content: ""; }
-.page--home .section__desc { max-width: 40rem; }
 .section--hero { position: relative; display: grid; min-height: 52rem; padding-top: var(--space-hero-header); overflow: hidden; color: var(--color-surface); background: var(--color-primary-dark); isolation: isolate; place-items: center stretch; }
 .section--hero::after { position: absolute; z-index: 1; background: linear-gradient(90deg,var(--color-overlay),var(--color-overlay-soft)); content: ""; inset: 0; pointer-events: none; }
 .section--hero > .section__inner { position: relative; z-index: 2; }
@@ -528,16 +524,13 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .card--activity .card__title { font-size: var(--font-size-lg); }
 .card--activity .card__desc { font-size: var(--font-size-sm); }
 .card__body, .card--feature, .card--program { padding: var(--space-xl); }
-.card--feature { min-height: 16rem; border: 0.0625rem solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); }
+.card--feature { border: 0.0625rem solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); }
 .card__number { color: var(--color-primary); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); }
 .card__title { margin: 0; font-size: var(--font-size-xl); line-height: var(--line-height-tight); }
-.card--feature .card__title { margin-top: var(--space-2xl); }
-/* The grid already levels each row, so the card does not need a floor of its own. */
-.page--home .card--feature { min-height: 0; }
 .page--home .card--feature .card__number { display: block; letter-spacing: 0.12em; }
 .feature-card__icon { display: inline-grid; margin-bottom: var(--space-md); }
-.page--home .card--feature .card__title { margin-top: var(--space-lg); line-height: 1.25; }
-.page--home .card--feature .card__desc { font-size: var(--font-size-sm); }
+.card--feature .card__title { margin-top: var(--space-lg); line-height: 1.25; }
+.card--feature .card__desc { font-size: var(--font-size-sm); }
 .card__desc { margin: var(--space-md) 0 0; color: var(--color-text-muted); }
 
 .content-grid { display: grid; gap: var(--space-lg); }
@@ -622,8 +615,8 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .program-card__tag { display: block; margin-bottom: var(--space-xs); color: var(--color-course-one-to-one); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.12em; text-transform: uppercase; }
 .program-card__subtitle { margin: var(--space-xs) 0 0; color: var(--color-text); font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); }
 .program-card__hours { margin: var(--space-md) 0 0; color: var(--color-primary); font-size: var(--font-size-xl); font-weight: var(--font-weight-extra-bold); letter-spacing: -0.01em; line-height: var(--line-height-tight); }
-.page--home .card--program .card__title { font-size: var(--font-size-xl); letter-spacing: -0.01em; }
-.page--home .program-card__subtitle { color: var(--color-text-muted); }
+.card--program .card__title { font-size: var(--font-size-xl); letter-spacing: -0.01em; }
+.program-card__subtitle { color: var(--color-text-muted); }
 .section.section--teachers { background: var(--color-surface-soft); }
 .teacher-layout { display: grid; gap: var(--space-2xl); grid-template-columns: 1fr 1fr; align-items: stretch; }
 .teacher-layout__image { width: 100%; min-height: var(--size-teacher-image); border-radius: var(--radius-lg); object-fit: cover; }
@@ -994,7 +987,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .inquiry-form__fields { grid-template-columns: var(--grid-single-column); }
   .inquiry-form__field--full { grid-column: var(--grid-column-auto); }
   .inquiry-confirmation { padding: var(--space-xl); }
-  .page--home { --font-size-heading: clamp(1.875rem,7vw,2.5rem); }
+  .page { --font-size-heading: clamp(1.875rem,7vw,2.5rem); }
   .page--home .section__figure { font-size: clamp(2.75rem,14vw,3.5rem); }
   .page--home .teacher-point { grid-template-columns: var(--grid-single-column); gap: var(--space-sm); }
   .page--home .teacher-point__desc { grid-column: auto; }

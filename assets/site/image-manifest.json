@@ -179,21 +179,21 @@
       }
     ]
   },
-  "campus-restroom.webp": {
-    "width": 1672,
-    "height": 941,
+  "campus-washroom.webp": {
+    "width": 1086,
+    "height": 1448,
     "variants": [
       {
-        "file": "campus-restroom-640.webp",
+        "file": "campus-washroom-640.webp",
         "width": 640
       },
       {
-        "file": "campus-restroom-960.webp",
+        "file": "campus-washroom-960.webp",
         "width": 960
       },
       {
-        "file": "campus-restroom.webp",
-        "width": 1672
+        "file": "campus-washroom.webp",
+        "width": 1086
       }
     ]
   },
