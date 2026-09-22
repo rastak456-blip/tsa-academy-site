@@ -533,6 +533,8 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .card__number { color: var(--color-primary); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); }
 .card__title { margin: 0; font-size: var(--font-size-xl); line-height: var(--line-height-tight); }
 .card--feature .card__title { margin-top: var(--space-2xl); }
+/* The grid already levels each row, so the card does not need a floor of its own. */
+.page--home .card--feature { min-height: 0; }
 .page--home .card--feature .card__number { display: flex; align-items: center; gap: var(--space-sm); letter-spacing: 0.12em; }
 .page--home .card--feature .card__number::before { flex: none; width: 1.5rem; height: var(--size-border-emphasis); border-radius: var(--radius-pill); background: var(--color-accent-strong); content: ""; }
 .page--home .card--feature .card__title { margin-top: var(--space-lg); line-height: 1.25; }
