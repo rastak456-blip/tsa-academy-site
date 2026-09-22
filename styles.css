@@ -953,7 +953,11 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .utility-menu { gap: var(--space-md); }
   .utility-menu__link:first-child { display: none; }
   .brand__image { width: var(--size-brand-compact); }
-  .section--hero { min-height: 44rem; padding-top: 10rem; }
+  /* On a phone the hero fills the screen, the copy sits at the bottom, and the wash runs top to bottom so both the header and the copy keep their contrast over a bright photograph. */
+  .section--hero { min-height: var(--size-viewport); padding-top: calc(var(--size-header-compact) + var(--size-header-utility) + var(--space-xl)); padding-bottom: var(--space-2xl); align-items: end; }
+  .section--hero::after { background: linear-gradient(180deg,var(--color-overlay),var(--color-overlay-soft) 38%,var(--color-overlay)); }
+  .section__title-label { margin-bottom: var(--space-md); padding: var(--space-xs) var(--space-sm); font-size: var(--font-size-sm); letter-spacing: 0.08em; }
+  .section__title-text { font-size: clamp(1.75rem,7.5vw,2.5rem); }
   html[lang="ko"] .section__title-text { white-space: normal; }
   .section__desc { font-size: var(--font-size-base); }
   .media-grid--location, .media-grid--campus, .media-grid--rooms, .media-grid--editorial, .media-grid--editorial-two, .stay-list, .feature-list, .activity-list, .detail-layout, .teacher-layout, .location-layout, .location-info, .content-grid--two, .content-grid--three, .content-grid--four, .process-list, .split-feature, .brand-proof, .request-panel, .schedule-guidance { grid-template-columns: 1fr; }
