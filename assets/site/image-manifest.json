@@ -17,24 +17,6 @@
       }
     ]
   },
-  "campus-class-in-session.webp": {
-    "width": 1448,
-    "height": 1086,
-    "variants": [
-      {
-        "file": "campus-class-in-session-640.webp",
-        "width": 640
-      },
-      {
-        "file": "campus-class-in-session-960.webp",
-        "width": 960
-      },
-      {
-        "file": "campus-class-in-session.webp",
-        "width": 1448
-      }
-    ]
-  },
   "campus-classroom-four-seat.webp": {
     "width": 1672,
     "height": 941,
@@ -139,6 +121,24 @@
       },
       {
         "file": "campus-lounge.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "campus-one-to-one-lesson.webp": {
+    "width": 1448,
+    "height": 804,
+    "variants": [
+      {
+        "file": "campus-one-to-one-lesson-640.webp",
+        "width": 640
+      },
+      {
+        "file": "campus-one-to-one-lesson-960.webp",
+        "width": 960
+      },
+      {
+        "file": "campus-one-to-one-lesson.webp",
         "width": 1448
       }
     ]
