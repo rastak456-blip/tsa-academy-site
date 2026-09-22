@@ -26,7 +26,7 @@ const menuGroups = {
     'curriculum-ielts-guarantee.html',
     'curriculum-levels.html',
   ],
-  community: ['community-notice.html', 'community-faq.html', 'partnership-inquiry.html', 'partnership-thank-you.html'],
+  community: ['community-inquiry.html', 'community-inquiry-thank-you.html', 'partnership-inquiry.html', 'partnership-thank-you.html'],
 };
 
 const [siteHeaderTemplate, familyHeaderTemplate, siteFooterTemplate] = await Promise.all([
