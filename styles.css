@@ -155,7 +155,6 @@
   --aspect-ratio-portrait: 3 / 4;
   --aspect-ratio-gallery-wide: 16 / 8;
   --aspect-ratio-gallery-card: 4 / 3;
-  --aspect-ratio-facility-card: 4 / 5;
   --position-classroom-private: center 20%;
   --position-classroom-study-room: center 35%;
   --stroke-width-icon: 1.7;
@@ -678,10 +677,9 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .facility-group__header { margin-bottom: var(--space-xl); }
 .facility-group__title { margin: 0; font-size: var(--font-size-xl); }
 .facility-group__list { display: grid; gap: var(--space-lg); }
-.facility-group__list--common-area { grid-template-columns: repeat(3,1fr); }
-.facility-group__list--cafeteria { grid-template-columns: repeat(4,1fr); }
-.facility-group__list--classroom { grid-template-columns: repeat(2,1fr); }
-.facility-card { position: relative; min-width: 0; margin: 0; border-radius: var(--radius-lg); overflow: hidden; background: var(--color-surface-soft); aspect-ratio: var(--aspect-ratio-facility-card); }
+.facility-group__list--arrival, .facility-group__list--amenity { grid-template-columns: repeat(2,1fr); }
+.facility-group__list--classroom { grid-template-columns: repeat(3,1fr); }
+.facility-card { position: relative; min-width: 0; margin: 0; border-radius: var(--radius-lg); overflow: hidden; background: var(--color-surface-soft); aspect-ratio: var(--aspect-ratio-gallery-card); }
 .facility-card__image { width: 100%; height: 100%; object-fit: cover; }
 .facility-card__caption { position: absolute; right: var(--space-lg); bottom: var(--space-lg); left: var(--space-lg); color: var(--color-surface); font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); text-shadow: 0 0.125rem 1rem var(--color-caption-shadow); }
 .section--stay-options, .section--stay-comfort { background: var(--color-surface-soft); }
@@ -940,7 +938,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .level-path__item { min-height: unset; border-radius: var(--radius-md); }
   .activity-list { grid-template-columns: repeat(2,1fr); }
   .classroom-gallery, .program-list--overview { grid-template-columns: repeat(3,1fr); }
-  .facility-group__list--cafeteria { grid-template-columns: repeat(2,1fr); }
+  .facility-group__list--classroom { grid-template-columns: repeat(2,1fr); }
   .content-grid--three, .content-grid--four, .process-list { grid-template-columns: repeat(2,1fr); }
   .content-grid--class-types > *, .content-grid--class-types > :nth-child(4) { grid-column: auto; }
   .check-list, .mock-calendar, .activity-flow--four { grid-template-columns: 1fr; }
@@ -969,7 +967,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .daily-schedule__item { gap: var(--space-xs); grid-template-columns: 1fr; }
   .classroom-gallery { grid-template-columns: repeat(2,1fr); }
   .program-list--overview { grid-template-columns: 1fr; }
-  .gallery-grid--camp, .activity-gallery__media, .facility-group__list--common-area, .facility-group__list--cafeteria, .facility-group__list--classroom { grid-template-columns: 1fr; }
+  .gallery-grid--camp, .activity-gallery__media, .facility-group__list--arrival, .facility-group__list--amenity, .facility-group__list--classroom { grid-template-columns: 1fr; }
   .stay-option, .stay-room-gallery { grid-template-columns: 1fr; }
   .stay-option--hotel .stay-option__media { order: 0; }
   .section--subhero .section__inner { grid-template-columns: 1fr; }
@@ -988,7 +986,6 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .program-showcase, .detail-layout__image, .teacher-layout__image { min-height: 24rem; }
   .section.section--gallery-hero, .section.section--facility-safety { min-height: 40rem; }
   .gallery-feature, .gallery-feature__image { min-height: 22rem; }
-  .facility-card { aspect-ratio: var(--aspect-ratio-gallery-card); }
   .request-panel__list { grid-template-columns: 1fr; }
   .detail-layout--reverse .detail-layout__image { order: 0; }
   .site-footer__inner { align-items: flex-start; flex-direction: column; }

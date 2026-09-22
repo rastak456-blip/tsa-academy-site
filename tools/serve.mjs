@@ -22,6 +22,9 @@ const contentTypes = {
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
   '.svg': 'image/svg+xml',
+  '.webp': 'image/webp',
+  '.avif': 'image/avif',
+  '.json': 'application/json; charset=utf-8',
 };
 
 http

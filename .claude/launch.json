@@ -4,13 +4,33 @@
     {
       "name": "tsa-site-preview",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["tools/serve.mjs"],
+      "runtimeArgs": [
+        "tools/serve.mjs"
+      ],
       "port": 4173
+    },
+    {
+      "name": "tsa-site-step1",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "tools/serve.mjs",
+        "--root",
+        "../TSA어학원 사이트-step1/dist",
+        "--port",
+        "4175"
+      ],
+      "port": 4175
     },
     {
       "name": "tsa-site-baseline",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["tools/serve.mjs", "--root", "../TSA어학원 사이트-baseline/dist", "--port", "4174"],
+      "runtimeArgs": [
+        "tools/serve.mjs",
+        "--root",
+        "../TSA어학원 사이트-baseline/dist",
+        "--port",
+        "4174"
+      ],
       "port": 4174
     }
   ]
