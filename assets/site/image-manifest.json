@@ -17,6 +17,24 @@
       }
     ]
   },
+  "campus-cafe-counter.webp": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "file": "campus-cafe-counter-640.webp",
+        "width": 640
+      },
+      {
+        "file": "campus-cafe-counter-960.webp",
+        "width": 960
+      },
+      {
+        "file": "campus-cafe-counter.webp",
+        "width": 1448
+      }
+    ]
+  },
   "campus-classroom-four-seat.webp": {
     "width": 1672,
     "height": 941,
@@ -139,6 +157,24 @@
       },
       {
         "file": "campus-one-to-one-lesson.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "campus-reception-hall.webp": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "file": "campus-reception-hall-640.webp",
+        "width": 640
+      },
+      {
+        "file": "campus-reception-hall-960.webp",
+        "width": 960
+      },
+      {
+        "file": "campus-reception-hall.webp",
         "width": 1448
       }
     ]
