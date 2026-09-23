@@ -330,7 +330,10 @@ main [id] { scroll-margin-top: calc(var(--size-header-compact) + var(--size-head
 /* The comparison table lists each course mix per programme length, so the tags wrap under the hours. */
 /* The whole row is the link to its course, reached from the name so the tab order stays one stop per row. */
 .course-table__row { position: relative; transition: transform var(--transition-base), box-shadow var(--transition-base); }
+.course-table__link { display: inline-flex; align-items: center; gap: var(--space-xs); }
 .course-table__link::after { position: absolute; content: ""; inset: 0; }
+.course-table__icon { color: var(--color-row-accent); font-size: var(--font-size-sm); transition: transform var(--transition-base); }
+.course-table__row:hover .course-table__icon, .course-table__row:focus-within .course-table__icon { transform: translateX(0.25rem); }
 .course-table__row:hover { transform: translateY(-0.125rem); }
 .course-table__row:hover td, .course-table__row:hover th, .course-table__row:focus-within td, .course-table__row:focus-within th { border-color: var(--color-row-accent); }
 .course-table__row:focus-within { outline: 0.125rem solid var(--color-row-accent); outline-offset: 0.125rem; }
