@@ -71,7 +71,6 @@
   --font-size-xl: 1.5rem;
   --font-size-heading: clamp(2.5rem, 4vw, 3.625rem);
   --font-size-display: clamp(3.5rem, 6.4vw, 5.75rem);
-  --font-size-hero-title: clamp(2.5rem, 4vw, 4rem);
   --font-size-gallery-hero-title: clamp(2.5rem, 3.8vw, 4rem);
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -102,6 +101,7 @@
   --size-header-border-offset: 0.125rem;
   --size-brand: 10.5rem;
   --size-brand-compact: 7rem;
+  --size-hero-brand: 21rem;
   --size-brand-header-height: 3rem;
   --scroll-header-threshold: 160;
   --space-hero-header: 18rem;
@@ -126,9 +126,6 @@
   --size-course-label: 12rem;
   --size-wide-header: 64rem;
   --size-icon-circle: 3.75rem;
-  --size-cycle-arrow: 0.875rem;
-  --size-cycle-marker: 3rem;
-  --size-border-arrow: 0.1875rem;
   --size-program-showcase: 32rem;
   --size-subhero-media: 31rem;
   --size-teacher-image: 35rem;
@@ -246,8 +243,8 @@ main [id] { scroll-margin-top: calc(var(--size-header-compact) + var(--size-head
 .section__desc { max-width: 40rem; margin: var(--space-lg) 0 0; color: var(--color-text-muted); font-size: var(--font-size-lg); }
 .section__lead { margin: var(--space-md) 0 0; font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); line-height: var(--line-height-compact); }
 .section__note { margin: var(--space-xl) 0 0; color: var(--color-text-muted); font-size: var(--font-size-sm); }
-.section--hero { position: relative; display: grid; min-height: 52rem; padding-top: var(--space-hero-header); overflow: hidden; color: var(--color-surface); background: var(--color-primary-dark); isolation: isolate; place-items: center stretch; }
-.section--hero::after { position: absolute; z-index: 1; background: linear-gradient(90deg,var(--color-overlay),var(--color-overlay-soft)); content: ""; inset: 0; pointer-events: none; }
+.section--hero { position: relative; display: grid; min-height: 52rem; padding-top: var(--space-hero-header); overflow: hidden; color: var(--color-surface); background: var(--color-primary-dark); isolation: isolate; place-items: center; }
+.section--hero::after { position: absolute; z-index: 1; background: var(--color-overlay); content: ""; inset: 0; pointer-events: none; }
 .section--hero > .section__inner { position: relative; z-index: 2; }
 .hero-slider { position: absolute; z-index: 0; inset: 0; }
 .hero-slider__slide { position: absolute; background-position: center; background-repeat: no-repeat; background-size: cover; inset: 0; opacity: 0; transition: opacity var(--transition-hero-slide); }
@@ -466,12 +463,11 @@ html[lang="ko"] .section__title, html[lang="ko"] .card__title, html[lang="ko"] .
 .course-table__group strong { margin-right: var(--space-md); color: var(--color-course-one-to-one); }
 .course-table__group span { color: var(--color-white-muted); font-weight: var(--font-weight-medium); letter-spacing: 0; }
 .course-legend--overview { justify-content: flex-end; color: var(--color-text-muted); }
-.section__header--hero { max-width: var(--size-content); }
+.section__header--hero { display: grid; max-width: var(--size-content); justify-items: center; text-align: center; }
+.hero-brand { width: min(var(--size-hero-brand), 70vw); height: auto; margin-bottom: var(--space-lg); }
 .section__header--hero .section__eyebrow { color: var(--color-surface); }
 .section__title--hero { font-size: inherit; }
-.section__title-text { display: block; font-size: var(--font-size-hero-title); line-height: var(--line-height-tight); }
-html[lang="ko"] .section__title-text { white-space: nowrap; }
-.section__title-label { display: block; width: fit-content; max-width: var(--ratio-full); margin-bottom: var(--space-lg); padding: var(--space-xs) var(--space-md); border-radius: var(--radius-sm); color: var(--color-primary-dark); background: var(--color-hero-label-surface); box-shadow: var(--shadow-hero-label); font-size: var(--font-size-base); font-weight: var(--font-weight-extra-bold); letter-spacing: var(--letter-spacing-wide); line-height: var(--line-height-tight); text-transform: uppercase; }
+.section__title-label { display: block; max-width: var(--ratio-full); color: var(--color-surface); font-size: var(--font-size-xl); font-weight: var(--font-weight-bold); letter-spacing: 0.01em; line-height: var(--line-height-compact); }
 .text-accent { color: var(--color-text-accent); font-weight: 600; }
 .text-highlight { color: var(--color-text-highlight); font-weight: 900; }
 
@@ -590,19 +586,6 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .process-step__label { display: block; margin-bottom: var(--space-sm); color: var(--color-primary); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
 .process-step__title { margin: 0; font-size: var(--font-size-xl); line-height: var(--line-height-tight); }
 .process-step__desc { margin: var(--space-md) 0 0; color: var(--color-text-muted); }
-.cycle-diagram { position: relative; }
-.cycle-diagram__marker { position: absolute; top: 50%; left: 50%; display: grid; width: var(--size-cycle-marker); height: var(--size-cycle-marker); border: var(--size-border-arrow) solid var(--color-border); border-radius: var(--radius-pill); color: var(--color-primary); background: var(--color-surface); place-items: center; transform: translate(-50%,-50%); }
-.cycle-diagram__marker svg { width: 1.5rem; height: 1.5rem; }
-/* The learning cycle is the one process list that loops, so its four steps ring a 2x2 grid. */
-.process-list--cycle { column-gap: var(--space-2xl); grid-template-columns: repeat(2,1fr); row-gap: var(--space-2xl); }
-.process-list--cycle .process-step { position: relative; }
-.process-list--cycle .process-step:nth-child(3) { grid-column: 2; grid-row: 2; }
-.process-list--cycle .process-step:nth-child(4) { grid-column: 1; grid-row: 2; }
-.process-list--cycle .process-step::after { position: absolute; width: var(--size-cycle-arrow); height: var(--size-cycle-arrow); border-top: var(--size-border-arrow) solid var(--color-primary); border-right: var(--size-border-arrow) solid var(--color-primary); content: ""; }
-.process-list--cycle .process-step:nth-child(1)::after { top: 50%; right: calc(var(--space-2xl) / -2 - var(--size-cycle-arrow) / 2); transform: translateY(-50%) rotate(45deg); }
-.process-list--cycle .process-step:nth-child(2)::after { bottom: calc(var(--space-2xl) / -2 - var(--size-cycle-arrow) / 2); left: 50%; transform: translateX(-50%) rotate(135deg); }
-.process-list--cycle .process-step:nth-child(3)::after { top: 50%; left: calc(var(--space-2xl) / -2 - var(--size-cycle-arrow) / 2); transform: translateY(-50%) rotate(-135deg); }
-.process-list--cycle .process-step:nth-child(4)::after { top: calc(var(--space-2xl) / -2 - var(--size-cycle-arrow) / 2); left: 50%; transform: translateX(-50%) rotate(-45deg); }
 .split-feature { display: grid; gap: var(--space-2xl); grid-template-columns: repeat(2,1fr); align-items: center; }
 .split-feature__media { min-height: var(--size-teacher-image); margin: 0; border-radius: var(--radius-lg); overflow: hidden; background: var(--color-surface-soft); }
 .split-feature__image { width: 100%; height: 100%; min-height: var(--size-teacher-image); object-fit: cover; }
@@ -954,13 +937,6 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .classroom-gallery, .program-list--overview { grid-template-columns: repeat(3,1fr); }
   .facility-group__list--classroom { grid-template-columns: repeat(2,1fr); }
   .content-grid--three, .content-grid--four, .process-list { grid-template-columns: repeat(2,1fr); }
-  /* Below four columns the row is no longer a single track, so the connectors go. */
-  /* One column cannot hold a ring, so the steps run down and the last one ends the list. */
-  .cycle-diagram__marker { display: none; }
-  .process-list--cycle { grid-template-columns: 1fr; row-gap: var(--space-2xl); }
-  .process-list--cycle .process-step:nth-child(3), .process-list--cycle .process-step:nth-child(4) { grid-column: auto; grid-row: auto; }
-  .process-list--cycle .process-step:nth-child(n)::after { top: auto; right: auto; bottom: calc(var(--space-2xl) / -2 - var(--size-cycle-arrow) / 2); left: 50%; transform: translateX(-50%) rotate(135deg); }
-  .process-list--cycle .process-step:last-child::after { content: none; }
   .content-grid--class-types > *, .content-grid--class-types > :nth-child(4) { grid-column: auto; }
   .check-list, .mock-calendar, .activity-flow--four { grid-template-columns: 1fr; }
   .level-ladder__band, .level-ladder__band--low-intermediate, .level-ladder__band--intermediate, .level-ladder__band--high-intermediate, .level-ladder__band--advanced { margin-left: 0; }
@@ -981,13 +957,10 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .utility-menu { gap: var(--space-md); }
   .utility-menu__link:first-child { display: none; }
   .brand__image { width: var(--size-brand-compact); }
-  /* On a phone the hero fills the screen, the copy sits at the bottom, and the wash runs top to bottom so both the header and the copy keep their contrast over a bright photograph. */
-  .section--hero { min-height: min(var(--size-viewport), 36rem); padding-top: calc(var(--size-header-compact) + var(--size-header-utility) + var(--space-xl)); padding-bottom: var(--space-2xl); align-items: end; }
+  /* The phone hero is capped so the slides keep more of their width, and the centred block sits over a flat wash. */
+  .section--hero { min-height: min(var(--size-viewport), 36rem); padding-top: calc(var(--size-header-compact) + var(--size-header-utility) + var(--space-xl)); padding-bottom: var(--space-2xl); }
   .hero-slider__slide--lobby { background-position: 45% center; }
-  .section--hero::after { background: linear-gradient(180deg,var(--color-overlay),var(--color-overlay-soft) 38%,var(--color-overlay)); }
-  .section__title-label { margin-bottom: var(--space-md); padding: var(--space-xs) var(--space-sm); font-size: var(--font-size-sm); letter-spacing: 0.08em; }
-  .section__title-text { font-size: clamp(1.75rem,7.5vw,2.5rem); }
-  html[lang="ko"] .section__title-text { white-space: normal; }
+  .section__title-label { font-size: var(--font-size-base); }
   .section__desc { font-size: var(--font-size-base); }
   .media-grid--location, .media-grid--campus, .media-grid--rooms, .media-grid--editorial, .media-grid--editorial-two, .stay-list, .feature-list, .activity-list, .detail-layout, .teacher-layout, .location-layout, .location-info, .content-grid--two, .content-grid--three, .content-grid--four, .process-list, .split-feature, .brand-proof, .request-panel, .schedule-guidance { grid-template-columns: 1fr; }
   .daily-schedule__item { gap: var(--space-xs); grid-template-columns: 1fr; }
