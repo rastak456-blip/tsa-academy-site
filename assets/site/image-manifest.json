@@ -499,6 +499,24 @@
       }
     ]
   },
+  "hero-whale-shark.webp": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "file": "hero-whale-shark-640.webp",
+        "width": 640
+      },
+      {
+        "file": "hero-whale-shark-960.webp",
+        "width": 960
+      },
+      {
+        "file": "hero-whale-shark.webp",
+        "width": 1672
+      }
+    ]
+  },
   "ielts-editorial-hero.webp": {
     "width": 1672,
     "height": 941,
