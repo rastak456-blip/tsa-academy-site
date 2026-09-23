@@ -134,7 +134,7 @@
   --size-gallery-map: 34rem;
   --size-gallery-card: 30rem;
   --size-editorial-media: 24rem;
-  --size-form-control: 3.5rem;
+  --size-form-control: 2.75rem;
   --size-form-message: 10rem;
   --size-inquiry-media: 42rem;
   --size-inquiry-media-compact: 21rem;
@@ -710,7 +710,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .inquiry-form__field--full { grid-column: var(--grid-column-full); }
 .inquiry-form__label { color: var(--color-text); font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); }
 .inquiry-form__required { color: var(--color-danger); }
-.inquiry-form__control { width: var(--ratio-full); min-height: var(--size-form-control); padding: var(--space-sm) var(--space-md); border: var(--size-border-base) solid var(--color-border); border-radius: var(--radius-sm); color: var(--color-text); background: var(--color-field-surface); font: inherit; transition: border-color var(--transition-base), box-shadow var(--transition-base), background var(--transition-base); }
+.inquiry-form__control { width: var(--ratio-full); min-height: var(--size-form-control); padding: var(--space-xs) var(--space-md); border: var(--size-border-base) solid var(--color-border); border-radius: var(--radius-sm); color: var(--color-text); background: var(--color-field-surface); font: inherit; line-height: var(--line-height-compact); transition: border-color var(--transition-base), box-shadow var(--transition-base), background var(--transition-base); }
 .inquiry-form__control:hover { border-color: var(--color-primary); }
 .inquiry-form__control:focus { border-color: var(--color-primary); outline: none; background: var(--color-surface); box-shadow: var(--shadow-focus); }
 .inquiry-form__control--message { min-height: var(--size-form-message); resize: vertical; }
