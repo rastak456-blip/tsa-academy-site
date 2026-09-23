@@ -127,6 +127,8 @@
   --size-wide-header: 64rem;
   --size-icon-circle: 3.75rem;
   --size-cycle-node: 2.25rem;
+  --size-cycle-arrow: 0.625rem;
+  --size-border-arrow: 0.125rem;
   --size-program-showcase: 32rem;
   --size-subhero-media: 31rem;
   --size-teacher-image: 35rem;
@@ -585,13 +587,17 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .process-step__label { display: block; margin-bottom: var(--space-sm); color: var(--color-primary); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
 .process-step__title { margin: 0; font-size: var(--font-size-xl); line-height: var(--line-height-tight); }
 .process-step__desc { margin: var(--space-md) 0 0; color: var(--color-text-muted); }
-/* The learning cycle is the one process list that loops, so it gets numbered nodes and a return line. */
-.process-list--cycle { position: relative; margin-top: calc(var(--size-cycle-node) / 2); padding-bottom: calc(var(--size-cycle-node) + var(--space-md)); counter-reset: cycle-step; }
+/* The learning cycle is the one process list that loops, so its four steps ring a 2x2 grid. */
+.process-list--cycle { margin-top: calc(var(--size-cycle-node) / 2); column-gap: var(--space-lg); grid-template-columns: repeat(2,1fr); row-gap: calc(var(--size-cycle-node) + var(--space-lg)); counter-reset: cycle-step; }
 .process-list--cycle .process-step { position: relative; padding-top: calc(var(--size-cycle-node) / 2 + var(--space-md)); counter-increment: cycle-step; }
+.process-list--cycle .process-step:nth-child(3) { grid-column: 2; grid-row: 2; }
+.process-list--cycle .process-step:nth-child(4) { grid-column: 1; grid-row: 2; }
 .process-list--cycle .process-step::before { position: absolute; top: calc(var(--size-cycle-node) / -2); left: 0; display: grid; width: var(--size-cycle-node); height: var(--size-cycle-node); border-radius: var(--radius-pill); color: var(--color-surface); background: var(--color-primary); content: counter(cycle-step); font-size: var(--font-size-sm); font-weight: var(--font-weight-extra-bold); line-height: 1; place-items: center; }
-.process-list--cycle .process-step:not(:last-child)::after { position: absolute; top: -0.25rem; right: -1rem; width: 0.5rem; height: 0.5rem; border-top: 0.125rem solid var(--color-primary); border-right: 0.125rem solid var(--color-primary); content: ""; transform: rotate(45deg); }
-.process-list--cycle::after { position: absolute; right: calc((100% - var(--space-lg) * 3) / 4 - var(--size-cycle-node) / 2); bottom: var(--space-md); left: calc(var(--size-cycle-node) / 2); height: var(--size-cycle-node); border: 0.125rem dashed var(--color-border); border-top: 0; border-radius: 0 0 var(--radius-lg) var(--radius-lg); content: ""; }
-.process-list--cycle::before { position: absolute; bottom: calc(var(--space-md) + var(--size-cycle-node) - 0.3125rem); left: calc(var(--size-cycle-node) / 2 - 0.25rem); width: 0.5rem; height: 0.5rem; border-top: 0.125rem solid var(--color-border); border-left: 0.125rem solid var(--color-border); content: ""; transform: rotate(45deg); }
+.process-list--cycle .process-step::after { position: absolute; width: var(--size-cycle-arrow); height: var(--size-cycle-arrow); border-top: var(--size-border-arrow) solid var(--color-primary); border-right: var(--size-border-arrow) solid var(--color-primary); content: ""; }
+.process-list--cycle .process-step:nth-child(1)::after { top: 50%; right: calc(var(--space-lg) / -2 - var(--size-cycle-arrow) / 2); transform: translateY(-50%) rotate(45deg); }
+.process-list--cycle .process-step:nth-child(2)::after { bottom: calc(var(--size-cycle-node) / -2 - var(--space-lg) / 2 - var(--size-cycle-arrow) / 2); left: 50%; transform: translateX(-50%) rotate(135deg); }
+.process-list--cycle .process-step:nth-child(3)::after { top: 50%; left: calc(var(--space-lg) / -2 - var(--size-cycle-arrow) / 2); transform: translateY(-50%) rotate(-135deg); }
+.process-list--cycle .process-step:nth-child(4)::after { top: calc(var(--size-cycle-node) / -2 - var(--space-lg) / 2 - var(--size-cycle-arrow) / 2); left: 50%; transform: translateX(-50%) rotate(-45deg); }
 .split-feature { display: grid; gap: var(--space-2xl); grid-template-columns: repeat(2,1fr); align-items: center; }
 .split-feature__media { min-height: var(--size-teacher-image); margin: 0; border-radius: var(--radius-lg); overflow: hidden; background: var(--color-surface-soft); }
 .split-feature__image { width: 100%; height: 100%; min-height: var(--size-teacher-image); object-fit: cover; }
@@ -944,8 +950,11 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .facility-group__list--classroom { grid-template-columns: repeat(2,1fr); }
   .content-grid--three, .content-grid--four, .process-list { grid-template-columns: repeat(2,1fr); }
   /* Below four columns the row is no longer a single track, so the connectors go. */
-  .process-list--cycle { margin-top: calc(var(--size-cycle-node) / 2); padding-bottom: 0; }
-  .process-list--cycle::before, .process-list--cycle::after, .process-list--cycle .process-step:not(:last-child)::after { content: none; }
+  /* One column cannot hold a ring, so the steps run down and the last one ends the list. */
+  .process-list--cycle { grid-template-columns: 1fr; row-gap: calc(var(--size-cycle-node) + var(--space-lg)); }
+  .process-list--cycle .process-step:nth-child(3), .process-list--cycle .process-step:nth-child(4) { grid-column: auto; grid-row: auto; }
+  .process-list--cycle .process-step:nth-child(n)::after { top: auto; right: auto; bottom: calc(var(--size-cycle-node) / -2 - var(--space-lg) / 2 - var(--size-cycle-arrow) / 2); left: 50%; transform: translateX(-50%) rotate(135deg); }
+  .process-list--cycle .process-step:last-child::after { content: none; }
   .content-grid--class-types > *, .content-grid--class-types > :nth-child(4) { grid-column: auto; }
   .check-list, .mock-calendar, .activity-flow--four { grid-template-columns: 1fr; }
   .level-ladder__band, .level-ladder__band--low-intermediate, .level-ladder__band--intermediate, .level-ladder__band--high-intermediate, .level-ladder__band--advanced { margin-left: 0; }
