@@ -636,7 +636,7 @@ const koreanTranslations = new Map([
   ['Correct, Repeat, and Transfer', '교정하고 반복해 다른 상황까지 확장합니다'],
   ['Give immediate correction, repeat the improved form, and apply it in a new situation.', '즉시 교정하고 개선된 표현을 반복한 뒤 새로운 상황에 다시 적용합니다.'],
   ['LESSON EXPERIENCE', '수업 경험'],
-  ['Every Lesson Has a Clear Learning Purpose', '모든 수업에는 분명한 학습 목적이 있습니다'],
+  ['Every Lesson Has a Clear Purpose', '수업마다 분명한 목적이 있습니다'],
   ['Teachers balance encouragement with precise feedback so students can feel progress and understand what to improve next.', '강사는 격려와 정확한 피드백의 균형을 맞춰 학생이 성장을 체감하고 다음 개선점을 이해하도록 돕습니다.'],
   ['More Student Talk, More Useful Feedback', '더 많은 학생 발화와 더 실용적인 피드백'],
   ['TSA lessons protect speaking time while keeping corrections focused and actionable.', 'TSA 수업은 충분한 말하기 시간을 확보하면서도 교정을 핵심적이고 바로 적용할 수 있게 제공합니다.'],
