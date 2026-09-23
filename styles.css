@@ -328,6 +328,16 @@ main [id] { scroll-margin-top: calc(var(--size-header-compact) + var(--size-head
 .course-table__row td:last-child { border-right: 0.0625rem solid var(--color-border); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; text-align: right; }
 .course-pill { display: inline-block; padding: var(--space-xs) var(--space-md); border-radius: var(--radius-pill); color: var(--color-primary); background: var(--color-icon-surface); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); white-space: nowrap; }
 /* The comparison table lists each course mix per programme length, so the tags wrap under the hours. */
+/* The whole row is the link to its course, reached from the name so the tab order stays one stop per row. */
+.course-table__row { position: relative; transition: transform var(--transition-base), box-shadow var(--transition-base); }
+.course-table__link::after { position: absolute; content: ""; inset: 0; }
+.course-table__row:hover { transform: translateY(-0.125rem); }
+.course-table__row:hover td, .course-table__row:hover th, .course-table__row:focus-within td, .course-table__row:focus-within th { border-color: var(--color-row-accent); }
+.course-table__row:focus-within { outline: 0.125rem solid var(--color-row-accent); outline-offset: 0.125rem; }
+.course-table__link:focus-visible { outline: none; }
+/* The comparison already has the section title above it, so it does not need a full band of space as well. */
+.section--course-compare { padding-top: clamp(3rem,5vw,4.5rem); }
+.section--course-compare .section__header { margin-bottom: var(--space-xl); }
 .course-mix { display: grid; margin: 0; padding: 0; gap: var(--space-sm); list-style: none; }
 .course-mix__row { display: flex; flex-wrap: wrap; gap: var(--space-xs); align-items: baseline; }
 .course-mix__hours { min-width: 3rem; color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
