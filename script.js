@@ -1352,10 +1352,14 @@ const hoverPointer = window.matchMedia('(hover: hover) and (pointer: fine)');
 const wideViewport = window.matchMedia('(min-width: 62.0625rem)');
 
 mainMenuButtons.forEach((button) => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', (event) => {
     // Hover and :focus-within already open the dropdown on a desktop pointer,
-    // where a click would only pin it open until another group is clicked.
+    // so a click there is the link doing its job: go to the section's first page.
     if (hoverPointer.matches && wideViewport.matches) return;
+
+    // Without a hover pointer there is no other way to reach the submenu,
+    // so the first tap opens it instead of following the link.
+    event.preventDefault();
 
     const group = button.closest('.main-menu__group');
     const isOpen = button.getAttribute('aria-expanded') === 'true';
