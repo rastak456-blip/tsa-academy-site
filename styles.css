@@ -42,6 +42,7 @@
   --image-hero-lobby: url("https://tsacebu.com/campaign/images/hero-slide-01.jpg");
   --image-hero-reception: url("https://tsacebu.com/campaign/images/hero-slide-02.jpg");
   --image-hero-campus: url("https://tsacebu.com/campaign/images/hero-slide-03.jpg");
+  --image-hero-lounge: url("assets/site/campus-lounge-hall.webp");
   --image-stay-hero: url("https://tsacebu.com/campaign/images/tsa-dormitory-aerial-view-pool.jpg");
   --color-overlay: rgba(13, 25, 54, 0.48);
   --color-overlay-soft: rgba(13,25,54,0.08);
@@ -250,6 +251,7 @@ main [id] { scroll-margin-top: calc(var(--size-header-compact) + var(--size-head
 .hero-slider__slide { position: absolute; background-position: center; background-repeat: no-repeat; background-size: cover; inset: 0; opacity: 0; transition: opacity var(--transition-hero-slide); }
 .hero-slider__slide--lobby { background-image: var(--image-hero-lobby); }
 .hero-slider__slide--reception { background-image: var(--image-hero-reception); }
+.hero-slider__slide--lounge { background-image: var(--image-hero-lounge); }
 .hero-slider__slide--campus { background-image: var(--image-hero-campus); }
 .hero-slider__slide--active { opacity: var(--opacity-hero-slide); }
 .section--subhero { padding-top: clamp(4rem, 8vw, 7rem); background: var(--color-surface-warm); }

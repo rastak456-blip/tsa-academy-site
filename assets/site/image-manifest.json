@@ -107,6 +107,24 @@
       }
     ]
   },
+  "campus-lounge-hall.webp": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "file": "campus-lounge-hall-640.webp",
+        "width": 640
+      },
+      {
+        "file": "campus-lounge-hall-960.webp",
+        "width": 960
+      },
+      {
+        "file": "campus-lounge-hall.webp",
+        "width": 1448
+      }
+    ]
+  },
   "campus-lounge-in-use.webp": {
     "width": 1672,
     "height": 941,
