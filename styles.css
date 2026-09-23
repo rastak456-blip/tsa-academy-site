@@ -125,6 +125,7 @@
   --size-course-label: 12rem;
   --size-wide-header: 64rem;
   --size-icon-circle: 3.75rem;
+  --size-cycle-node: 2.25rem;
   --size-program-showcase: 32rem;
   --size-subhero-media: 31rem;
   --size-teacher-image: 35rem;
@@ -582,6 +583,13 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .process-step__label { display: block; margin-bottom: var(--space-sm); color: var(--color-primary); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
 .process-step__title { margin: 0; font-size: var(--font-size-xl); line-height: var(--line-height-tight); }
 .process-step__desc { margin: var(--space-md) 0 0; color: var(--color-text-muted); }
+/* The learning cycle is the one process list that loops, so it gets numbered nodes and a return line. */
+.process-list--cycle { position: relative; margin-top: calc(var(--size-cycle-node) / 2); padding-bottom: calc(var(--size-cycle-node) + var(--space-md)); counter-reset: cycle-step; }
+.process-list--cycle .process-step { position: relative; padding-top: calc(var(--size-cycle-node) / 2 + var(--space-md)); counter-increment: cycle-step; }
+.process-list--cycle .process-step::before { position: absolute; top: calc(var(--size-cycle-node) / -2); left: 0; display: grid; width: var(--size-cycle-node); height: var(--size-cycle-node); border-radius: var(--radius-pill); color: var(--color-surface); background: var(--color-primary); content: counter(cycle-step); font-size: var(--font-size-sm); font-weight: var(--font-weight-extra-bold); line-height: 1; place-items: center; }
+.process-list--cycle .process-step:not(:last-child)::after { position: absolute; top: -0.25rem; right: -1rem; width: 0.5rem; height: 0.5rem; border-top: 0.125rem solid var(--color-primary); border-right: 0.125rem solid var(--color-primary); content: ""; transform: rotate(45deg); }
+.process-list--cycle::after { position: absolute; right: calc((100% - var(--space-lg) * 3) / 4 - var(--size-cycle-node) / 2); bottom: var(--space-md); left: calc(var(--size-cycle-node) / 2); height: var(--size-cycle-node); border: 0.125rem dashed var(--color-border); border-top: 0; border-radius: 0 0 var(--radius-lg) var(--radius-lg); content: ""; }
+.process-list--cycle::before { position: absolute; bottom: calc(var(--space-md) + var(--size-cycle-node) - 0.3125rem); left: calc(var(--size-cycle-node) / 2 - 0.25rem); width: 0.5rem; height: 0.5rem; border-top: 0.125rem solid var(--color-border); border-left: 0.125rem solid var(--color-border); content: ""; transform: rotate(45deg); }
 .split-feature { display: grid; gap: var(--space-2xl); grid-template-columns: repeat(2,1fr); align-items: center; }
 .split-feature__media { min-height: var(--size-teacher-image); margin: 0; border-radius: var(--radius-lg); overflow: hidden; background: var(--color-surface-soft); }
 .split-feature__image { width: 100%; height: 100%; min-height: var(--size-teacher-image); object-fit: cover; }
@@ -933,6 +941,9 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .classroom-gallery, .program-list--overview { grid-template-columns: repeat(3,1fr); }
   .facility-group__list--classroom { grid-template-columns: repeat(2,1fr); }
   .content-grid--three, .content-grid--four, .process-list { grid-template-columns: repeat(2,1fr); }
+  /* Below four columns the row is no longer a single track, so the connectors go. */
+  .process-list--cycle { margin-top: calc(var(--size-cycle-node) / 2); padding-bottom: 0; }
+  .process-list--cycle::before, .process-list--cycle::after, .process-list--cycle .process-step:not(:last-child)::after { content: none; }
   .content-grid--class-types > *, .content-grid--class-types > :nth-child(4) { grid-column: auto; }
   .check-list, .mock-calendar, .activity-flow--four { grid-template-columns: 1fr; }
   .level-ladder__band, .level-ladder__band--low-intermediate, .level-ladder__band--intermediate, .level-ladder__band--high-intermediate, .level-ladder__band--advanced { margin-left: 0; }
