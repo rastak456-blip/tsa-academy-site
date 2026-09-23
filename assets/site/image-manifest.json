@@ -269,6 +269,164 @@
       }
     ]
   },
+  "course-hero-esl-intensive.webp": {
+    "width": 1774,
+    "height": 887,
+    "variants": [
+      {
+        "file": "course-hero-esl-intensive-640.webp",
+        "width": 640
+      },
+      {
+        "file": "course-hero-esl-intensive-960.webp",
+        "width": 960
+      },
+      {
+        "file": "course-hero-esl-intensive.webp",
+        "width": 1774
+      }
+    ]
+  },
+  "course-hero-esl-power.webp": {
+    "width": 1774,
+    "height": 887,
+    "variants": [
+      {
+        "file": "course-hero-esl-power-640.webp",
+        "width": 640
+      },
+      {
+        "file": "course-hero-esl-power-960.webp",
+        "width": 960
+      },
+      {
+        "file": "course-hero-esl-power.webp",
+        "width": 1774
+      }
+    ]
+  },
+  "course-hero-esl-regular-plus.webp": {
+    "width": 1774,
+    "height": 887,
+    "variants": [
+      {
+        "file": "course-hero-esl-regular-plus-640.webp",
+        "width": 640
+      },
+      {
+        "file": "course-hero-esl-regular-plus-960.webp",
+        "width": 960
+      },
+      {
+        "file": "course-hero-esl-regular-plus.webp",
+        "width": 1774
+      }
+    ]
+  },
+  "course-hero-esl-regular.webp": {
+    "width": 1774,
+    "height": 887,
+    "variants": [
+      {
+        "file": "course-hero-esl-regular-640.webp",
+        "width": 640
+      },
+      {
+        "file": "course-hero-esl-regular-960.webp",
+        "width": 960
+      },
+      {
+        "file": "course-hero-esl-regular.webp",
+        "width": 1774
+      }
+    ]
+  },
+  "course-hero-ielts-guarantee.webp": {
+    "width": 1774,
+    "height": 887,
+    "variants": [
+      {
+        "file": "course-hero-ielts-guarantee-640.webp",
+        "width": 640
+      },
+      {
+        "file": "course-hero-ielts-guarantee-960.webp",
+        "width": 960
+      },
+      {
+        "file": "course-hero-ielts-guarantee.webp",
+        "width": 1774
+      }
+    ]
+  },
+  "course-hero-ielts-pre.webp": {
+    "width": 1774,
+    "height": 887,
+    "variants": [
+      {
+        "file": "course-hero-ielts-pre-640.webp",
+        "width": 640
+      },
+      {
+        "file": "course-hero-ielts-pre-960.webp",
+        "width": 960
+      },
+      {
+        "file": "course-hero-ielts-pre.webp",
+        "width": 1774
+      }
+    ]
+  },
+  "course-hero-ielts-regular.webp": {
+    "width": 1774,
+    "height": 887,
+    "variants": [
+      {
+        "file": "course-hero-ielts-regular-640.webp",
+        "width": 640
+      },
+      {
+        "file": "course-hero-ielts-regular-960.webp",
+        "width": 960
+      },
+      {
+        "file": "course-hero-ielts-regular.webp",
+        "width": 1774
+      }
+    ]
+  },
+  "curriculum-hero-portrait.webp": {
+    "width": 960,
+    "height": 1550,
+    "variants": [
+      {
+        "file": "curriculum-hero-portrait-640.webp",
+        "width": 640
+      },
+      {
+        "file": "curriculum-hero-portrait.webp",
+        "width": 960
+      }
+    ]
+  },
+  "curriculum-hero.webp": {
+    "width": 2000,
+    "height": 508,
+    "variants": [
+      {
+        "file": "curriculum-hero-640.webp",
+        "width": 640
+      },
+      {
+        "file": "curriculum-hero-960.webp",
+        "width": 960
+      },
+      {
+        "file": "curriculum-hero.webp",
+        "width": 2000
+      }
+    ]
+  },
   "education-heritage.webp": {
     "width": 1254,
     "height": 1254,
