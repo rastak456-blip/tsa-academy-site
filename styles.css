@@ -127,6 +127,7 @@
   --size-wide-header: 64rem;
   --size-icon-circle: 3.75rem;
   --size-cycle-arrow: 0.875rem;
+  --size-cycle-marker: 3rem;
   --size-border-arrow: 0.1875rem;
   --size-program-showcase: 32rem;
   --size-subhero-media: 31rem;
@@ -589,6 +590,9 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
 .process-step__label { display: block; margin-bottom: var(--space-sm); color: var(--color-primary); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
 .process-step__title { margin: 0; font-size: var(--font-size-xl); line-height: var(--line-height-tight); }
 .process-step__desc { margin: var(--space-md) 0 0; color: var(--color-text-muted); }
+.cycle-diagram { position: relative; }
+.cycle-diagram__marker { position: absolute; top: 50%; left: 50%; display: grid; width: var(--size-cycle-marker); height: var(--size-cycle-marker); border: var(--size-border-arrow) solid var(--color-border); border-radius: var(--radius-pill); color: var(--color-primary); background: var(--color-surface); place-items: center; transform: translate(-50%,-50%); }
+.cycle-diagram__marker svg { width: 1.5rem; height: 1.5rem; }
 /* The learning cycle is the one process list that loops, so its four steps ring a 2x2 grid. */
 .process-list--cycle { column-gap: var(--space-2xl); grid-template-columns: repeat(2,1fr); row-gap: var(--space-2xl); }
 .process-list--cycle .process-step { position: relative; }
@@ -952,6 +956,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .content-grid--three, .content-grid--four, .process-list { grid-template-columns: repeat(2,1fr); }
   /* Below four columns the row is no longer a single track, so the connectors go. */
   /* One column cannot hold a ring, so the steps run down and the last one ends the list. */
+  .cycle-diagram__marker { display: none; }
   .process-list--cycle { grid-template-columns: 1fr; row-gap: var(--space-2xl); }
   .process-list--cycle .process-step:nth-child(3), .process-list--cycle .process-step:nth-child(4) { grid-column: auto; grid-row: auto; }
   .process-list--cycle .process-step:nth-child(n)::after { top: auto; right: auto; bottom: calc(var(--space-2xl) / -2 - var(--size-cycle-arrow) / 2); left: 50%; transform: translateX(-50%) rotate(135deg); }
