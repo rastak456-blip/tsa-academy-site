@@ -265,6 +265,7 @@ main [id] { scroll-margin-top: calc(var(--size-header-compact) + var(--size-head
 .section--curriculum-hero .section__eyebrow, .section--curriculum-hero .section__desc { color: var(--color-surface); }
 .section--curriculum-hero .course-summary__item { border-color: var(--color-white-outline); color: var(--color-surface); background: var(--color-white-glass); }
 .section--curriculum-hero--all { --image-course-hero: url("assets/site/curriculum-hero.webp"); }
+.section--curriculum-hero--esl { --image-course-hero: url("assets/site/course-hero-esl.webp"); }
 .section--curriculum-hero--esl-regular { --image-course-hero: url("assets/site/course-hero-esl-regular.webp"); }
 .section--curriculum-hero--esl-regular-plus { --image-course-hero: url("assets/site/course-hero-esl-regular-plus.webp"); }
 .section--curriculum-hero--esl-intensive { --image-course-hero: url("assets/site/course-hero-esl-intensive.webp"); }
