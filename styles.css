@@ -347,8 +347,7 @@ main [id] { scroll-margin-top: calc(var(--size-header-compact) + var(--size-head
 /* The hero above sits on a near-identical cream, so the band needs an edge. */
 .section.section--program-group { border-top: 0.0625rem solid var(--color-border); }
 .section--program-group .section__eyebrow { color: var(--color-program-accent); }
-.section--program-group .curriculum-course__title { display: flex; align-items: center; gap: var(--space-md); color: var(--color-program-accent); }
-.section--program-group .curriculum-course__title::before { flex: none; width: 2rem; height: var(--size-border-emphasis); border-radius: var(--radius-pill); background: var(--color-program-accent); content: ""; }
+.section--program-group .curriculum-course__title { color: var(--color-program-accent); }
 .section--program-group .card__link { color: var(--color-program-accent); }
 .curriculum-block { padding: var(--space-xl); border: 0.0625rem solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); }
 .curriculum-block__title { margin: 0 0 var(--space-lg); font-size: var(--font-size-xl); }
