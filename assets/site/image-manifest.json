@@ -216,8 +216,8 @@
     ]
   },
   "campus-washroom.webp": {
-    "width": 1086,
-    "height": 1448,
+    "width": 1448,
+    "height": 1086,
     "variants": [
       {
         "file": "campus-washroom-640.webp",
@@ -229,7 +229,7 @@
       },
       {
         "file": "campus-washroom.webp",
-        "width": 1086
+        "width": 1448
       }
     ]
   },
