@@ -11,8 +11,8 @@ const distributionRoot = path.join(projectRoot, 'dist');
 const publicFiles = ['styles.css', 'script.js', 'introduce-tsacebu.css'];
 
 const menuGroups = {
-  about: ['about-index.html', 'about-philosophy.html', 'about-difference.html', 'about-teachers.html', 'about-care.html', 'about-schedule.html'],
-  gallery: ['gallery-index.html', 'gallery-campus.html', 'gallery-stay.html', 'gallery-activities.html'],
+  about: ['about-philosophy.html', 'about-difference.html', 'about-teachers.html', 'about-care.html', 'about-schedule.html'],
+  gallery: ['gallery-campus.html', 'gallery-stay.html', 'gallery-activities.html'],
   curriculum: [
     'curriculum-overview.html',
     'curriculum-esl.html',
@@ -26,7 +26,7 @@ const menuGroups = {
     'curriculum-ielts-guarantee.html',
     'curriculum-levels.html',
   ],
-  community: ['community-index.html', 'community-inquiry.html', 'community-inquiry-thank-you.html', 'partnership-inquiry.html', 'partnership-thank-you.html', 'community-faq.html', 'community-notice.html'],
+  community: ['community-inquiry.html', 'community-inquiry-thank-you.html', 'partnership-inquiry.html', 'partnership-thank-you.html', 'community-faq.html', 'community-notice.html'],
 };
 
 const [siteHeaderTemplate, familyHeaderTemplate, siteFooterTemplate] = await Promise.all([
