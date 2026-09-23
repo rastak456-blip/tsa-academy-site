@@ -301,8 +301,8 @@ main [id] { scroll-margin-top: calc(var(--size-header-compact) + var(--size-head
 .table-wrapper--compare { border: 0; }
 .course-table--compare { min-width: 46rem; border-collapse: separate; border-spacing: 0 var(--space-sm); background: transparent; }
 .course-table--compare th, .course-table--compare td { padding: var(--space-md) var(--space-lg); border-bottom: 0; text-align: left; }
-.course-table--compare thead th { padding-block: 0 var(--space-xs); color: var(--color-text-muted); background: transparent; font-size: var(--font-size-xs); letter-spacing: var(--letter-spacing-wide); }
-.course-table--compare thead th:last-child { text-align: left; }
+/* Each row is its own card, so a drawn header row would float above nothing. The names stay for screen readers. */
+.course-table--compare thead { position: absolute; width: var(--size-visually-hidden); height: var(--size-visually-hidden); overflow: hidden; clip-path: inset(var(--ratio-half)); white-space: nowrap; }
 .course-table--compare .course-table__group th { padding-block: var(--space-sm); border-radius: var(--radius-sm); color: var(--color-surface); background: var(--color-row-accent); font-size: var(--font-size-xs); }
 .course-table--compare .course-table__group--esl { --color-row-accent: var(--color-program-esl); }
 .course-table--compare .course-table__group--ielts { --color-row-accent: var(--color-program-ielts); }
@@ -1029,7 +1029,6 @@ html[lang="ko"] .section__title, html[lang="ko"] .card__title, html[lang="ko"] .
   /* Same treatment for the overview comparison, group rows becoming headings. */
   .course-table--compare, .course-table--compare tbody, .course-table--compare tr, .course-table--compare th, .course-table--compare td { display: block; }
   .course-table--compare { min-width: 0; border-spacing: 0; }
-  .course-table--compare thead { display: none; }
   .course-table--compare th, .course-table--compare td { padding: 0; text-align: left; }
   .course-table--compare .course-table__group th { margin: var(--space-xl) 0 var(--space-md); padding: var(--space-sm) var(--space-md); }
   .course-table--compare tbody tr:first-child .course-table__group th, .course-table--compare .course-table__group:first-child th { margin-top: 0; }
