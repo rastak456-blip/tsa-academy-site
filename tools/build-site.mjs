@@ -73,9 +73,14 @@ function optimizeImageMarkup(content) {
         tag = addImageAttribute(tag, 'srcset', srcset);
         // A gallery feature spans the whole content column, so it needs its own hint.
         const isFullColumn = originalTag.includes('gallery-feature__image');
+        // The featured and wide cards sit on the 1.35fr side of a 1.35fr/0.65fr grid,
+        // so they are much wider than the default hint; they go full width below 62rem.
+        // The card modifier lives on the figure, so the image carries its own marker.
+        const isGridFeature = originalTag.includes('media-card__image--featured');
         let sizes = '(max-width: 48rem) calc(100vw - 2rem), 32rem';
         if (isSubhero) sizes = '(max-width: 48rem) calc(100vw - 2rem), 44rem';
         if (isFullColumn) sizes = '(max-width: 48rem) calc(100vw - 2rem), min(75rem, calc(100vw - 4rem))';
+        if (isGridFeature) sizes = '(max-width: 44rem) calc(100vw - 2rem), (max-width: 62rem) calc(100vw - 4rem), calc((min(75rem, 100vw - 4rem) - 1.5rem) * 0.675)';
         tag = addImageAttribute(tag, 'sizes', sizes);
       }
     } else if (/assets\/tsa-logo\.png(?:[?#].*)?$/.test(source)) {
