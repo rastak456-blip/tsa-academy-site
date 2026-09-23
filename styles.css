@@ -315,6 +315,10 @@ main [id] { scroll-margin-top: calc(var(--size-header-compact) + var(--size-head
 .course-table__row td { color: var(--color-text-muted); }
 .course-table__row td:last-child { border-right: 0.0625rem solid var(--color-border); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; text-align: right; }
 .course-pill { display: inline-block; padding: var(--space-xs) var(--space-md); border-radius: var(--radius-pill); color: var(--color-primary); background: var(--color-icon-surface); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); white-space: nowrap; }
+/* The comparison table lists each course mix per programme length, so the tags wrap under the hours. */
+.course-mix { display: grid; margin: 0; padding: 0; gap: var(--space-sm); list-style: none; }
+.course-mix__row { display: flex; flex-wrap: wrap; gap: var(--space-xs); align-items: center; justify-content: flex-end; }
+.course-mix .class-tag { min-width: 0; }
 .visually-hidden { position: absolute; width: var(--size-visually-hidden); height: var(--size-visually-hidden); overflow: hidden; clip-path: inset(var(--ratio-half)); white-space: nowrap; }
 .course-table__cell--action { width: 0; text-align: right; }
 .table-action { display: inline-flex; min-height: 2.25rem; padding-inline: var(--space-md); border: 0.0625rem solid var(--color-row-accent); border-radius: var(--radius-pill); align-items: center; gap: var(--space-xs); color: var(--color-row-accent); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); white-space: nowrap; transition: color var(--transition-base), background var(--transition-base); }
@@ -1047,6 +1051,7 @@ html[lang="ko"] .section__title-text { white-space: nowrap; }
   .course-table--compare { min-width: 0; border-spacing: 0; }
   .course-table--compare thead { display: none; }
   .course-table--compare th, .course-table--compare td { padding: 0; text-align: left; }
+  .course-mix__row { justify-content: flex-start; }
   .course-table--compare .course-table__group th { margin: var(--space-xl) 0 var(--space-md); padding: var(--space-sm) var(--space-md); }
   .course-table--compare tbody tr:first-child .course-table__group th, .course-table--compare .course-table__group:first-child th { margin-top: 0; }
   .course-table__row { padding: var(--space-lg); border: 0.0625rem solid var(--color-border); border-left: var(--size-border-emphasis) solid var(--color-row-accent); border-radius: var(--radius-md); background: var(--color-surface); }

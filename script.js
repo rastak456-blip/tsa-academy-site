@@ -872,6 +872,7 @@ const koreanTranslations = new Map([
   ['Balanced improvement across every area of English', '영어 전 영역의 균형 있는 향상'],
   ['8 hours / 6 hours', '8시간 / 6시간'],
   ['8 hours', '8시간'],
+  ['6 hours', '6시간'],
   ['Stronger interaction and group communication', '상호작용과 그룹 커뮤니케이션 강화'],
   ['1:1 centred speaking reinforcement', '1:1 중심의 Speaking 집중 강화'],
   ['Speaking, Functional English, and Presentation', 'Speaking, Functional English, Presentation 강화'],
