@@ -772,7 +772,7 @@ html[lang="ko"] body { word-break: keep-all; overflow-wrap: break-word; }
 .section--course-cta .section__actions { margin-top: var(--space-none); }
 
 .course-summary { display: flex; flex-wrap: wrap; margin: 0 0 var(--space-lg); padding: 0; gap: var(--space-xs); list-style: none; }
-.course-summary__item { padding: var(--space-xs) var(--space-md); border-radius: var(--radius-pill); color: var(--color-primary-dark); background: var(--color-icon-surface); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
+.course-summary__item { padding: var(--space-xs) var(--space-md); border-radius: var(--radius-pill); box-shadow: inset 0 0 0 0.0625rem color-mix(in srgb, currentcolor 18%, transparent); color: var(--color-primary-dark); background: var(--color-icon-surface); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
 /* Summary chips repeat the timetable colours so both read as one system. */
 .course-summary__item--one-to-one { color: var(--color-primary-dark); background: var(--color-course-one-to-one); }
 .course-summary__item--small-group { color: var(--color-text); background: var(--color-course-small-group); }
