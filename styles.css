@@ -664,7 +664,8 @@ html[lang="ko"] body { word-break: keep-all; overflow-wrap: break-word; }
 .detail-list__item { padding: var(--space-lg) 0; border-bottom: 0.0625rem solid var(--color-border); font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); }
 .detail-list__item strong { display: inline-block; margin-bottom: var(--space-xs); font-size: 1.2em; }
 /* The consultation photograph is square, so the frame matches it and nothing is cropped. */
-.page--home .section--care .detail-layout__image { min-height: 0; aspect-ratio: 1; }
+/* The photograph is a 16:9 frame, so the square box cropped the second person out. */
+.page--home .section--care .detail-layout__image { min-height: 0; aspect-ratio: 16 / 9; }
 .page--home .section--care .detail-list { display: grid; gap: var(--space-lg); }
 .page--home .section--care .detail-list__item { position: relative; padding: 0 0 var(--space-lg) var(--space-xl); border-bottom: 0; color: var(--color-text-muted); font-size: var(--font-size-base); font-weight: var(--font-weight-medium); }
 .page--home .section--care .detail-list__item::before { position: absolute; top: 0.5em; left: 0; width: var(--space-sm); height: var(--space-sm); border-radius: var(--radius-pill); background: var(--color-primary); content: ""; }

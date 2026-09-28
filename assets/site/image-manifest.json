@@ -751,6 +751,24 @@
       }
     ]
   },
+  "student-care-meeting.webp": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "file": "student-care-meeting-640.webp",
+        "width": 640
+      },
+      {
+        "file": "student-care-meeting-960.webp",
+        "width": 960
+      },
+      {
+        "file": "student-care-meeting.webp",
+        "width": 1672
+      }
+    ]
+  },
   "student-consultation.webp": {
     "width": 1254,
     "height": 1254,
