@@ -916,9 +916,6 @@ html[lang="ko"] body { word-break: keep-all; overflow-wrap: break-word; }
 .level-ladder__band--intermediate { margin-left: var(--space-xl); }
 .level-ladder__band--high-intermediate { margin-left: var(--space-2xl); }
 .level-ladder__band--advanced { margin-left: calc(var(--space-2xl) + var(--space-md)); }
-.activity-flow--inverse .activity-flow__step { border-top-color: var(--color-accent); background: var(--color-white-glass); }
-.activity-flow--inverse .activity-flow__stage, .activity-flow--inverse .activity-flow__desc { color: var(--color-white-muted); }
-.activity-flow--inverse .activity-flow__step + .activity-flow__step::before { color: var(--color-accent); }
 .level-path { display: grid; margin: 0; padding: 0; gap: var(--space-sm); grid-template-columns: repeat(5,1fr); align-items: end; list-style: none; }
 .level-path__item { padding: var(--space-lg); border-radius: var(--radius-md) var(--radius-md) var(--space-none) var(--space-none); color: var(--color-surface); }
 .level-path__item--beginner { min-height: 11rem; background: var(--color-level-beginner-strong); }
@@ -930,10 +927,12 @@ html[lang="ko"] body { word-break: keep-all; overflow-wrap: break-word; }
 .level-path__name { display: block; margin-top: var(--space-xs); font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); }
 .level-path__desc { display: block; margin-top: var(--space-sm); font-size: var(--font-size-sm); line-height: var(--line-height-compact); opacity: 0.92; }
 
-.next-step { margin-top: var(--space-2xl); padding: var(--space-2xl); border-radius: var(--radius-lg); color: var(--color-surface); background: linear-gradient(90deg,var(--color-primary),var(--color-primary-dark)); }
-.next-step__label { margin: 0 0 var(--space-md); color: var(--color-accent); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
-.next-step__title { margin: 0; font-size: var(--font-size-xl); line-height: var(--line-height-compact); }
-.next-step__desc { margin: var(--space-md) 0 0; opacity: 0.85; }
+/* It sits in the card grid, so only the accent and the label set it apart. */
+.next-step { border-top: var(--size-border-emphasis) solid var(--color-primary); }
+.next-step:not(.content-card) { margin-top: var(--space-2xl); padding: var(--space-xl); border: 0.0625rem solid var(--color-border); border-top: var(--size-border-emphasis) solid var(--color-primary); border-radius: var(--radius-lg); background: var(--color-surface); box-shadow: var(--shadow-card); }
+.next-step__label { margin: 0 0 var(--space-md); color: var(--color-primary); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing-wide); }
+.next-step__title { margin: 0; font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); line-height: var(--line-height-compact); }
+.next-step__desc { margin: var(--space-md) 0 0; color: var(--color-text-muted); }
 
 .site-footer { padding-block: var(--space-2xl); color: var(--color-surface); background: var(--color-footer); }
 .site-footer__inner { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-xl); }
