@@ -413,6 +413,24 @@
       }
     ]
   },
+  "course-hero-ielts.webp": {
+    "width": 2000,
+    "height": 508,
+    "variants": [
+      {
+        "file": "course-hero-ielts-640.webp",
+        "width": 640
+      },
+      {
+        "file": "course-hero-ielts-960.webp",
+        "width": 960
+      },
+      {
+        "file": "course-hero-ielts.webp",
+        "width": 2000
+      }
+    ]
+  },
   "curriculum-hero-portrait.webp": {
     "width": 960,
     "height": 1550,
